@@ -50,7 +50,7 @@
 
 \begin{document}
 \begin{abstract}
-  For every prime $\ell\geq5$ and integer $n\geq2$, we construct an Ennola cubic field with a specified prime above $\ell$ of exact ideal-class order $2^n$. The same squareclass obstructions give four independent rational points on associated elliptic curves. A Pell equation parametrizes all parameters satisfying the required square and congruence conditions. A genus-one base change yields five independent sections, saturated at two, and infinitely many geometrically nonisomorphic rational fibres of rank at least five.
+  For every prime $\ell\geq5$ and integer $n\geq2$, we construct an Ennola cubic field with a specified prime above $\ell$ of exact ideal-class order $2^n$. The same squareclass obstructions give four independent rational points on associated elliptic curves. A Pell equation describes all parameters satisfying the required square and congruence conditions. A genus-one base change gives five independent sections whose generated subgroup is saturated at two. It also yields infinitely many geometrically nonisomorphic rational fibres of rank at least five.
 \end{abstract}
 \maketitle
 
@@ -61,7 +61,7 @@ Ennola's family of cubic polynomials arises in the study of exceptional units. R
 \[
   f_a(X)=X^3+(a-1)X^2-aX-1=X(X-1)(X+a)-1
 \]
-and put $K_a=\Q(\theta)$. The polynomial is irreducible, has three real roots, and has positive nonsquare discriminant $(a^2+3a-1)^2-32$. Thus $K_a$ is a totally real, non-Galois cubic field. The identity $\theta(\theta-1)(\theta+a)=1$ exhibits $\theta$ as an exceptional unit; both $\theta$ and $\theta-1$ have norm one. The elementary field properties are recalled in Section~2.
+and put $K_a=\Q(\theta)$. This choice fixes the real embedding in which both $\theta$ and $\theta-1$ are positive. The polynomial is irreducible, has three real roots, and has positive nonsquare discriminant $(a^2+3a-1)^2-32$. Thus $K_a$ is a totally real, non-Galois cubic field. The identity $\theta(\theta-1)(\theta+a)=1$ exhibits $\theta$ as an exceptional unit; both $\theta$ and $\theta-1$ have norm one. The elementary field properties are recalled in Section~2.
 
 Ennola conjectured that $\theta$ and $\theta-1$ form a fundamental system of units of the maximal order; see \cite{Ennola1991,Louboutin2017,ChoiKim2025}. We require only the known description of their unit squareclasses, so our results do not depend on this conjecture. We write $\Cl(K_a)$ for the ordinary ideal class group of the maximal order $\mathcal O_{K_a}$. The same squareclasses control principal ideal powers and the independence of rational points on
 \begin{equation}\label{eq:elliptic}
@@ -71,7 +71,7 @@ The connection is the identity
 \begin{equation}\label{eq:common-norm}
   \Nm_{K_a/\Q}(x+\theta)=x(x+1)(x-a)+1.
 \end{equation}
-For a number field $L$, we write $\Nm_{L/\Q}$ for the field norm from $L$ to $\Q$; in the present family this is $\Nm_{K_a/\Q}$. For a nonzero integral ideal $\mathfrak c\subset\mathcal O_L$, we write $\Nm\mathfrak c=\#(\mathcal O_L/\mathfrak c)$ for its positive absolute ideal norm, extended multiplicatively to nonzero fractional ideals. Brackets denote element squareclasses in $K_a^\times/K_a^{\times2}$ or ideal classes in $\Cl(K_a)$, according to the argument. Finite-place valuations are normalized to have value one on a uniformizer. The point at infinity is the identity $O$ of $E_a$.
+For a number field $L$, $\Nm_{L/\Q}$ denotes the field norm. For a nonzero integral ideal $\mathfrak c\subset\mathcal O_L$, set $\Nm\mathfrak c=\#(\mathcal O_L/\mathfrak c)$, and extend this norm multiplicatively to nonzero fractional ideals. Brackets denote element squareclasses in $K_a^\times/K_a^{\times2}$ or ideal classes in $\Cl(K_a)$, according to the argument. Finite-place valuations are normalized to have value one on a uniformizer. The point at infinity is the identity $O$ of $E_a$.
 
 Our first result prescribes both the rational prime and the exact order of a prime ideal class.
 
@@ -97,8 +97,6 @@ Our first result prescribes both the rational prime and the exact order of a pri
 \end{theorem}
 
 The change of linear form at $137$ is needed for the stated prime-ideal construction; see Remark~\ref{rem:137}. The defining order need not be maximal. Proposition~\ref{prop:nonmaximal} gives an explicit infinite sequence where it is not.
-
-The second result uses the two elements $4\theta-3$ and $16\theta-15$ simultaneously.
 
 \begin{theorem}\label{thm:four-points}
   Suppose that $a\geq3$, $a\equiv30$ or $34\pmod{52}$. If there are positive integers $u,v$ satisfying
@@ -127,11 +125,11 @@ The second result uses the two elements $4\theta-3$ and $16\theta-15$ simultaneo
 
 The square conditions define $v^2-20u^2=2861$. Theorem~\ref{thm:pell} describes all positive solutions giving either required congruence on $a$, and Proposition~\ref{prop:subsequence} provides infinitely many parameters satisfying the ideal-class hypotheses. The smallest parameter is $a=134$, with $(u,v)=(41,191)$. We also obtain an explicit family over $\Q(t)$ of rank at least four in Corollary~\ref{cor:rational-family}. These theorems give rank lower bounds and saturation at two; they do not determine ranks uniformly or give full Mordell--Weil bases of the specializations.
 
-Proposition~\ref{prop:rank-five-rational} gives infinitely many rational parameters with rank at least five by a further genus-one base change. Its parameter curve has only one integral value of $a$, so the corresponding infinitude for integer parameters is stated separately as Conjecture~\ref{conj:integer-rank-five}.
+Proposition~\ref{prop:rank-five-rational} gives infinitely many rational parameters with rank at least five by a further genus-one base change. This construction has only one integral value of $a$, as shown in Remark~\ref{rem:rank-five-integrality}.
 
 \subsection*{Relation to earlier work}
 
-Ennola proved the unit-squareclass result and constructed $K_a(\sqrt{\theta(\theta-1)})/K_a$ as an unramified quadratic extension for $a\equiv2\pmod4$ \cite[Propositions 3.3 and 6.1]{Ennola1991}; his Theorem~6.1 also gives families of class-group two-rank at least two. We recall Louboutin's short proof of the squareclass result \cite[Lemma 6]{Louboutin2017} and obtain a second independent unramified radical in Corollary~\ref{cor:hilbert}. The use of signatures and dyadic congruences follows the classical strategy of G.~Gras and M.-N.~Gras \cite[\S I.6]{GrasGras1975}, with the local conditions checked directly here.
+Ennola proved the unit-squareclass result and constructed $K_a(\sqrt{\theta(\theta-1)})/K_a$ as an unramified quadratic extension for $a\equiv2\pmod4$ \cite[Propositions 3.3 and 6.1]{Ennola1991}; his Theorem~6.1 also gives families whose class groups have two-rank at least two for all sufficiently large admissible parameters. We recall Louboutin's short proof of the squareclass result \cite[Lemma 6]{Louboutin2017} and obtain a second independent unramified radical in Corollary~\ref{cor:hilbert}. The use of signatures and dyadic congruences follows the classical strategy of G.~Gras and M.-N.~Gras \cite[\S I.6]{GrasGras1975}, with the local conditions checked directly here.
 
 Lee \cite[Theorem 1.1]{Lee2010} constructs ideal classes of any prescribed order in infinitely many fields of the same cubic family, written using $\rho=1/(\theta-1)$ and parameter $a+1$. Theorem~\ref{thm:prescribed-prime} fixes the rational prime in advance and gives uniform formulas for a prime above it of exact power-of-two class order. The norm bound of Kala--Sgallov\'a--Tinkov\'a \cite[\S3.5, Proposition 3.7 in arXiv version 2]{KalaSgallovaTinkova2025} gives an alternative exact-order argument for the first parameter formula when $\mathcal O_{K_a}=\Z[\theta]$. Under the same assumption, Louboutin's earlier bound \cite[Theorem 10]{Louboutin2001} gives this argument for $a\geq59$. Our local proof also covers the nonmaximal orders in Proposition~\ref{prop:nonmaximal}. Related power-residue constructions occur in Pincus--Washington \cite[\S4]{PincusWashington2023}.
 
@@ -224,7 +222,7 @@ We first record the local step that allows us to work in the maximal order witho
     I=(m,D\theta-c)\mathcal O_K
     \quad\text{satisfies}\quad \Nm I=m,\qquad I^N=(D\theta-c).
   \]
-  If $m$ is prime, $I$ is prime.
+  If $m$ is a rational prime, $I$ is prime.
 \end{lemma}
 
 \begin{proof}
@@ -263,6 +261,14 @@ For later use, direct evaluation gives
   In either case, $[\mathfrak p]^N=1$. If its order were a proper divisor of the power of two $N$, then $\mathfrak p^{N/2}$ would be principal. Writing $\mathfrak p^{N/2}=(\xi)$ would make $D\theta-D+1$ a unit times $\xi^2$, contrary to Lemma~\ref{lem:obstruction}. Hence $[\mathfrak p]$ has exact order $N$. Finally, a finite set of number fields has class groups of bounded exponent. The unbounded orders $2^n$ prove the assertion about field isomorphism classes.
 \end{proof}
 
+For comparison, suppose that $\ell\ne137$ and $\mathcal O_{K_a}=\Z[\theta]$. If $\mathfrak p^{N/2}=(\gamma)$, then $\gamma$ is integral and
+\[
+  |\Nm_{K_a/\Q}(\gamma)|=\ell^{N/2}=\sqrt{12a+73}<2a-3,
+\]
+since $a\geq46$ and $(2a-3)^2-(12a+73)=4(a-8)(a+2)>0$. The norm bound in \cite[\S3.5, Proposition 3.7 in arXiv version 2]{KalaSgallovaTinkova2025} forces $\gamma$ to be a unit times a rational integer. Its absolute norm would then be a cube, contrary to $3\nmid N/2=2^{n-1}$. This gives the alternative exact-order argument mentioned in the introduction.
+
+Louboutin's bound \cite[Theorem 10]{Louboutin2001} gives the same deduction for $a\geq59$, with his parameter $m=a+1$ and bound $2m-5=2a-3$. The identities $\rho=1/(\theta-1)=\theta(\theta+a)$ and $\theta=\rho^2-(a+1)\rho-(a+1)$ give $\Z[\rho]=\Z[\theta]$, so the maximality hypothesis agrees in the two sets of coordinates.
+
 \begin{corollary}\label{cor:composite}
   Let $n\geq2$, $N=2^n$, and $m\geq5$ with $\gcd(m,6\cdot137)=1$. For $a=(m^N-73)/12$, the ideal $I=(m,4\theta-3)\mathcal O_{K_a}$ has norm $m$, satisfies $I^N=(4\theta-3)$, and has exact class order $N$.
 \end{corollary}
@@ -276,7 +282,17 @@ For later use, direct evaluation gives
   \[
     Z^3+\frac{q-58}{3}Z^2+\frac{2q-137}{3}Z-q.
   \]
-  Write this polynomial as $G(Z)$ and put $p=137$. Modulo $p$, the polynomials $G(p^{N-1}Z)/p^N$, $G(pZ)/p^2$, and $G(Z)$ reduce respectively to $-Z/3-1$, $-Z(58Z+1)/3$, and $Z^2(Z-58/3)$. Their respective nonzero roots $-3$, $-1/58$, and $58/3$ are simple. Hensel's lemma gives three roots of $G$ in $\Q_{137}$ of valuations $N-1$, $1$, and $0$. Thus $137$ splits completely, $(\alpha)=\mathfrak p^{N-1}\mathfrak q$ for two distinct primes of norm $137$, and $(137,\alpha)$ has norm $137^2$. The form $24\theta-23$ avoids this obstruction. Since $24$ is not a rational square, its norm identity does not give a rational point on \eqref{eq:elliptic} by the denominator-clearing construction used for $4\theta-3$.
+  Write this polynomial as $G(Z)$ and put $p=137$. The three normalized polynomials have reductions
+  \begin{align*}
+    G(p^{N-1}Z)/p^N &\equiv -Z/3-1, \\
+    G(pZ)/p^2 &\equiv -Z(58Z+1)/3, \\
+    G(Z) &\equiv Z^2(Z-58/3) \pmod p.
+  \end{align*}
+  Their respective nonzero roots $-3$, $-1/58$, and $58/3$ are simple.
+
+  Hensel's lemma gives three roots of $G$ in $\Q_{137}$ of valuations $N-1$, $1$, and $0$. Thus $137$ splits completely, $(\alpha)=\mathfrak p^{N-1}\mathfrak q$ for two distinct primes of norm $137$, and $(137,\alpha)$ has norm $137^2$.
+
+  For the second parameter formula $a=(q-14353)/552$ in Theorem~\ref{thm:prescribed-prime}, the form $24\theta-23$ avoids this obstruction. At $x=-23/24$, its norm identity gives $y^2=137^N/24^3$, which is not a rational square. Thus it does not give a rational point on \eqref{eq:elliptic} by the denominator-clearing construction used for $4\theta-3$.
 \end{remark}
 
 \begin{proposition}\label{prop:nonmaximal}
@@ -352,6 +368,7 @@ For later use, direct evaluation gives
   The ideal identities place $[\alpha],[\beta]$ in $V_K$. If $[\mathfrak a]^e[\mathfrak b]^f=1$ for $e,f\in\{0,1\}$, Lemma~\ref{lem:virtual-units} puts $[\alpha^e\beta^f]$ in the span of $[\theta],[\theta-1]$. Lemma~\ref{lem:four-classes} forces $e=f=0$. Thus the four independent squareclasses yield two independent classes in $\Cl(K)[2]$ after quotienting by the two unit classes.
 \end{proof}
 
+\begin{samepage}
 \begin{corollary}\label{cor:hilbert}
   Under the ideal-class hypotheses of Theorem~\ref{thm:four-points}, the extension
   \[
@@ -359,6 +376,7 @@ For later use, direct evaluation gives
   \]
   is biquadratic and unramified at every finite and infinite prime. It is contained in the ordinary Hilbert class field.
 \end{corollary}
+\end{samepage}
 
 The proof implements the signature and Kummer-congruence strategy recalled in \cite[\S I.6(b--c) and Proposition I.5]{GrasGras1975}; we give the local argument for the present non-Galois fields.
 
@@ -387,6 +405,7 @@ The proof implements the signature and Kummer-congruence strategy recalled in \c
 
 \section{Pell parameters and a rational family}
 
+\begin{samepage}
 \begin{theorem}\label{thm:pell}
   Put $\eta=9+2\sqrt{20}$. All positive integer pairs $(u,v)$ for which \eqref{eq:two-squares} holds with an integer $a\geq3$ satisfying $a\equiv30$ or $34\pmod{52}$ are given by
   \begin{align*}
@@ -397,6 +416,7 @@ The proof implements the signature and Kummer-congruence strategy recalled in \c
   \end{align*}
   with $a=(u^2-73)/12$. There are infinitely many such parameters and infinitely many geometric isomorphism classes of the associated elliptic curves.
 \end{theorem}
+\end{samepage}
 
 \begin{proof}
   For a positive solution of $v^2-20u^2=2861$, set $z=v+u\sqrt{20}$. There is a unique integer $k\geq0$ with
@@ -526,7 +546,7 @@ On $Z\ne0$ put $u=U/Z$, $v=V/Z$, $w=W/Z$, and $a=(u^2-73)/12$. The second equati
   \]
   Its four roots are distinct, so the Jacobian criterion shows that the intersection is smooth. As a complete intersection of two quadrics in $\mathbb P^3$, it is geometrically connected; adjunction gives $\omega_C\simeq\mathcal O_C$, hence genus one. The same calculation gives good reduction at $17,19,31$: none divides $2\cdot20\cdot6\cdot2861\cdot1015\cdot37466$.
 
-  For these three primes, direct enumeration gives
+  To show that $C(\Q)$ is infinite, we compare its rational points with the torsion bound from good reduction. Direct enumeration gives
   \[
     \#C(\F_{17})=16,\qquad \#C(\F_{19})=24,\qquad \#C(\F_{31})=28.
   \]
@@ -538,7 +558,7 @@ On $Z\ne0$ put $u=U/Z$, $v=V/Z$, $w=W/Z$, and $a=(u^2-73)/12$. The second equati
   \]
   give eight distinct rational points. Choose one as origin, identifying $C$ with its Jacobian. Prime-to-$p$ torsion injects under good reduction \cite[Proposition VII.3.1(b)]{Silverman2009}. Reduction at $17$ excludes every odd primary torsion subgroup except possibly the $17$-primary subgroup; reduction at $31$ excludes that subgroup as well. The two-primary torsion injects at both primes, so its order divides $\gcd(16,28)=4$. At least one of the eight rational points therefore has infinite order, and $C(\Q)$ is infinite.
 
-  For independence, specialize at $c_0=[-59:1679:977:31]$ with $a_0=-5556/961$. The five points become
+  We next prove independence by specializing at $c_0=[-59:1679:977:31]$ with $a_0=-5556/961$. The five points become
   \[
     (0,1),\quad(-1,1),\quad(-3/4,-59/248),\quad
     (-15/16,1679/1984),\quad(8,977/31).
@@ -558,29 +578,28 @@ On $Z\ne0$ put $u=U/Z$, $v=V/Z$, $w=W/Z$, and $a=(u^2-73)/12$. The second equati
     \end{pmatrix},
     \qquad \det=1\quad\hbox{in }\F_2.
   \end{equation}
+  For a direct check of invertibility, let $R_i$ denote the rows and $e_i$ the standard row vectors of $\F_2^5$. Then
+  \[
+    R_4=e_3,\quad R_5+R_4=e_1,\quad R_1+R_5=e_4,\quad
+    R_3+R_5=e_5,\quad R_2+e_3+e_5=e_2.
+  \]
   A square unit has square residue at each of these primes. The invertible matrix therefore excludes all $31$ nonempty squareclass products. The descent argument in the proof of Theorem~\ref{thm:four-points} proves independence modulo torsion of the five specialized points. This argument uses only irreducibility and nonsingularity, so it applies at the rational parameter $a_0$. The fibre at $c_0$ is nonsingular, and its smooth proper model extends specialization to every rational section. A generic relation modulo torsion would specialize to such a relation in that fibre. Thus the five sections are independent over $\Q(C)$.
 
-  Put $F=\Q(C)$ and $\mathcal R=\mathcal O_{C,c_0}$. This local ring is an integrally closed discrete valuation ring with residue field $\Q$, and $a$ is regular at $c_0$. A root of the monic polynomial $f_a\in\mathcal R[X]$ in $F$ would belong to $\mathcal R$ and reduce to a rational root of $f_{a_0}$. Hence $E_a(F)[2]=0$. Denote the five sections by $P_1,\ldots,P_5$. If $2R=\sum_i n_iP_i$ in $E_a(F)$, specialization at $c_0$ and the invertible residue matrix force every $n_i$ to be even. The point $R-\sum_i(n_i/2)P_i$ is then two-torsion and vanishes. This proves saturation at two.
+  To prove saturation at two, put $F=\Q(C)$ and $\mathcal R=\mathcal O_{C,c_0}$. This local ring is an integrally closed discrete valuation ring with residue field $\Q$, and $a$ is regular at $c_0$. A root of the monic polynomial $f_a\in\mathcal R[X]$ in $F$ would belong to $\mathcal R$ and reduce to a rational root of $f_{a_0}$. Hence $E_a(F)[2]=0$. Denote the five sections by $P_1,\ldots,P_5$. If $2R=\sum_i n_iP_i$ in $E_a(F)$, specialization at $c_0$ and the invertible residue matrix force every $n_i$ to be even. The point $R-\sum_i(n_i/2)P_i$ is then two-torsion and vanishes. This proves saturation at two.
 
-  The function $a$ is nonconstant on $C$, and the formula for $j(E_a)$ in the proof of Theorem~\ref{thm:pell} shows that $j$ is nonconstant as well. The specialization theorem \cite[Theorem C.20.3]{Silverman2009} therefore makes specialization injective at all but finitely many points of $C(\Q)$. The five independent sections give rank at least five on infinitely many rational fibres. The map $j:C\to\mathbb P^1$ has finite fibres, so these include infinitely many curves that are pairwise nonisomorphic over $\overline{\Q}$.
+  Finally, we specialize to infinitely many fibres. The function $a$ is nonconstant on $C$, and the formula for $j(E_a)$ in the proof of Theorem~\ref{thm:pell} shows that $j$ is nonconstant as well. The specialization theorem \cite[Theorem C.20.3]{Silverman2009} therefore makes specialization injective at all but finitely many points of $C(\Q)$. The five independent sections give rank at least five on infinitely many rational fibres. The map $j:C\to\mathbb P^1$ has finite fibres, so these include infinitely many curves that are pairwise nonisomorphic over $\overline{\Q}$.
 \end{proof}
 
 \begin{remark}\label{rem:rank-five-integrality}
   The construction in Proposition~\ref{prop:rank-five-rational} has exactly one integral value of $a$. If $a\in\Z$, then $u^2=12a+73\geq0$ and $w^2=577-72a\geq0$ give $-6\leq a\leq8$. A rational number whose square is an integer is an integer. The first square condition leaves $a=-6,-4,-2,4,8$; the corresponding values of $v^2$ are $2881,3361,3841,5281,6241$, of which only $6241=79^2$ is a square. Hence $a=8$, realized by $(u,v,w)=(13,79,1)$.
 \end{remark}
 
-For integer $a$, the first square condition gives $u^2\equiv1\pmod{12}$. After changing the sign of $u$, write $u=6s+1$; then $a=3s^2+s-6$. We retain this first square condition in the following conjecture, without requiring $v^2=240a+4321$.
+For integers $a$, the first square condition gives $u^2\equiv1\pmod{12}$. After changing the sign of $u$, write $u=6s+1$; then $a=3s^2+s-6$. We wonder whether there are infinitely many integers $s$ with $3s^2+s-6\geq3$ for which \(\rank E_{3s^2+s-6}(\Q)\geq5\).
 
-\begin{conjecture}\label{conj:integer-rank-five}
-  There are infinitely many integers $s$ with $3s^2+s-6\geq3$ for which
-  \[
-    \rank E_{3s^2+s-6}(\Q)\geq5.
-  \]
-\end{conjecture}
 
 \section*{Use of AI-assisted tools}
 
-OpenAI Codex (GPT-6) was used to assist with a mathematical audit of the completed manuscript, to prepare scripts for exact algebraic checks, and to check references. The results and proofs were developed before this use of AI. The author retains responsibility for the mathematical content, references, and final text.
+OpenAI Codex (GPT-6) was used to assist with a mathematical audit of the completed manuscript, to prepare scripts for exact algebraic checks, to check references, and to polish the exposition. The results and proofs were developed before this use of AI. The author retains responsibility for the mathematical content, references, and final text.
 
 
 \bibliographystyle{alpha}

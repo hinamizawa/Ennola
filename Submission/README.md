@@ -1,12 +1,14 @@
 # Submission files
 
-**Prescribed ideal classes and elliptic points in Ennola cubic fields**, Junyu Lu. Prepared for Publicationes Mathematicae Debrecen on 2 October 2026.
+**Prescribed ideal classes and elliptic points in Ennola cubic fields**, Junyu Lu. Updated 3 October 2026, with Publicationes Mathematicae Debrecen and the Canadian Mathematical Bulletin under consideration.
 
-The manuscript PDF and its LaTeX source are in `Draft/`, together with the bibliography, generated bibliography and unmodified journal class. Optional arithmetic-check code is in `Computations/verify-finite.m`; the separate explanation is `Computations/finite-verification.md`. The explanation identifies the exact scope, software use and successful check. Its linked run records are included under `build/online-magma/`. `manifest.json` gives the SHA-256 of every exported file except the manifest itself.
+See [journal options and current files](journal-options-2026-10-03.md) for the two cover letters, confirmed publication-status declaration, current journal guidance, and remaining author-supplied declaration details. The current main and Debrecen PDFs have 16 and 18 pages, respectively; their source bodies agree except for the document-class line. The material below describes the existing Debrecen export workflow. The earlier ZIP is an older snapshot, and the packaging script must be adjusted before a new export.
+
+The manuscript PDF and its LaTeX source are in `Draft/`, together with the bibliography, generated bibliography and unmodified journal class. Optional arithmetic-check code is in `Computations/verify-finite.m`; the separate explanation is `Computations/finite-verification.md`. The explanation identifies the exact scope, software use and successful check. Its linked run records are included under `build/online-magma/`. Exported packages contain their own `manifest.json`; no current package manifest is implied by this working directory.
 
 The manuscript presents mathematical proofs with explicit finite calculations. It contains no software-dependent exact-rank examples. The optional code checks arithmetic in those proofs; the mathematical arguments and cited theorems do not depend on running it. Unfinished development experiments are excluded from this package.
 
-The [journal's author instructions](https://publi.math.unideb.hu/for-authors) request a PDF for initial submission and require disclosure of CAS and AI use. The code and its separate explanation are included for that purpose. The author confirmed that the local software used for development attempts is licensed. The manuscript retains the author's AI-assistance statement. This package makes no originality, exclusivity, copyright-transfer or other submission declaration on the author's behalf.
+The [journal's author instructions](https://publi.math.unideb.hu/for-authors) request a PDF for initial submission and require disclosure of CAS and AI use. The code and its separate explanation are available for that purpose. The author confirmed that the local software used for development attempts is licensed. The manuscript retains the author's AI-assistance statement, now including editorial polishing. The cover letters include only the author's confirmed statement that the manuscript is unpublished and not under consideration elsewhere; other submission attestations have not been inferred.
 
 ## Build
 

@@ -1,6 +1,6 @@
 # Mathematical scope and manuscript status
 
-Updated 2 October 2026 from the current [manuscript](Draft/ennola-squareclasses.tex). This file records the draft's statements and their boundaries. It is not a fresh proof audit or a certificate of priority.
+Updated 3 October 2026 from the current [manuscript](Draft/ennola-squareclasses.tex). This file records the draft's statements and their boundaries. It is not a fresh proof audit or a certificate of priority.
 
 ## Objects and conventions
 
@@ -18,13 +18,15 @@ For integers $a\geq3$, the defining polynomial is $f_a(X)=X^3+(a-1)X^2-aX-1$. Th
 | Pell classification | The proved finite reduction and complete residue periods give the two allowed Pell orbits and exponent classes printed in Section 5. |
 | Rational family | Four independent sections over $\mathbb Q(t)$ generate a subgroup saturated at two. Exact generic rank is undetermined. |
 | Genus-one base change | Five independent sections over $\mathbb Q(C)$ generate a subgroup saturated at two, and specialization yields infinitely many geometric isomorphism classes of rational fibres of rank at least five. |
-| Integer rank-five parameters | Infinitely many integer parameters $a=3s^2+s-6\geq3$ of rank at least five remain a conjecture. The genus-one construction has only one integral $a$, namely $8$. |
+| Integer rank-five parameters | The author poses only an incidental question about infinitely many integer parameters $a=3s^2+s-6\geq3$ of rank at least five; the formal conjecture has been deleted. The genus-one construction has only one integral $a$, namely $8$. |
 
 Saturation at two is not a full Mordell--Weil basis assertion. The submission candidate omits the software-dependent exact-rank examples and the computed list of integer rank-five parameters, at the author's request. The remaining finite calculations are given as explicit identities, residue tables, point counts and a squareclass matrix within the written proofs. Optional scripts check these calculations; no theorem invokes a software rank bound or point-discovery routine.
 
 ## Submission preparation
 
-The target is **Publicationes Mathematicae Debrecen**. The preparation adds context about exceptional units, shortens the comparison with earlier work, and makes the underlying number fields explicit in norm notation. Mathematical theorem statements, proof hypotheses, labels, author details and mathematical citations are preserved. Software-dependent examples and the software citation are removed from the manuscript; the unused bibliography entry remains in the authoring database. The main manuscript uses the author's `amsart` format; the synchronized submission source uses the journal's official class, with a preamble declaration for MSC 2020 and no fabricated publication metadata.
+The author is considering **Publicationes Mathematicae Debrecen** and the **Canadian Mathematical Bulletin**. The preparation adds context about exceptional units, shortens the comparison with earlier work, and makes the underlying number fields explicit in norm notation. Mathematical theorem statements, proof hypotheses, labels, author details and mathematical citations are preserved. Software-dependent examples and the software citation are removed from the manuscript; the unused bibliography entry remains in the authoring database. The main manuscript uses the author's `amsart` format; the synchronized submission source uses Debrecen's official class, with a preamble declaration for MSC 2020 and no fabricated publication metadata.
+
+The [fresh examination of 3 October](Review/2026-10-03-ennola-squareclasses-fresh-examination-01.md) covered the complete then-current main source and its material source applications. The subsequent authorized [editorial revision](build/polish-2026-10-03/REVISION.md) fixes its stale conjecture reference, explains the largest-root convention, expands two short verification details, and improves transitions and page breaks. All 15 numbered theorem, proposition, lemma, and corollary statements and all 28 labels match the reviewed main source. Both final source bodies agree except for the document class; their PDFs have 16 and 18 pages. Gary Walsh is retained in both bibliography entries at the author's explicit request. Separate [cover letters and current journal notes](Submission/journal-options-2026-10-03.md) have been prepared. The author confirmed that the manuscript is unpublished and not under consideration elsewhere; funding and competing-interest declarations remain unspecified.
 
 The [editorial revision of 2 October 2026](build/polish-2026-10-02/REVISION.md) applies the review's grammar fixes, uses $d_a=\operatorname{disc}(f_a)$ and $\operatorname{disc}(K_a)$ to distinguish the polynomial and field discriminants, qualifies the Louboutin and Walsh comparisons, and clarifies selected proof steps. The two source bodies agree exactly, and both PDFs were rebuilt and visually inspected. This revision preserves theorem hypotheses and conclusions; it does not claim a new independent proof audit or new exact computation.
 
