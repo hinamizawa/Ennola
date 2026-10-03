@@ -1,0 +1,28 @@
+# Local output, caches and credentials
+/build/
+/work/
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+*.aux
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex*
+*.toc
+*.pdf
+*.djvu
+*.zip
+*.log
+*.out
+/Draft/publmathdeb.cls
+**/Articles/
+**/Books/
+**/.research-cache/
+# Fresh logs and rendered manuscripts remain local under build/.
+Desktop.ini
+Thumbs.db
+.DS_Store

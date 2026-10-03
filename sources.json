@@ -1,0 +1,63 @@
+{
+  "project": "Prescribed ideal classes and elliptic points in Ennola cubic fields",
+  "prepared_on": "2026-10-02",
+  "scope": "Sources used for this submission preparation; this is not a full bibliography audit or a transfer of another project's reading records.",
+  "sources": [
+    {
+      "id": "pmd-author-instructions",
+      "url": "https://publi.math.unideb.hu/for-authors",
+      "accessed_on": "2026-10-02",
+      "reading_scope": "Submission, formal requirements, CAS code and explanation, AI transparency, and journal-class instructions.",
+      "source_type": "official journal webpage"
+    },
+    {
+      "id": "pmd-class",
+      "url": "https://publi.math.unideb.hu/publmathdeb.cls",
+      "local_path": "Draft/publmathdeb.cls",
+      "acquired_on": "2026-10-02",
+      "originating_project": "Ennola",
+      "version": "2.0, 2006-03-09, as served by the journal on the acquisition date",
+      "sha256": "2DBDC5DA9E088DCB85BBFC3D95EB6142DF8C8BDE0D46093AFADF53766E8A456F",
+      "reading_scope": "Class identification, title and author interfaces, default manuscript header, MSC edition support, theorem and bibliography interfaces.",
+      "modified": false
+    },
+    {
+      "id": "Louboutin2017",
+      "title": "Non-Galois cubic number fields with exceptional units",
+      "url": "https://publi.math.unideb.hu/load_doc.php?p=2170&t=pap",
+      "doi": "10.5486/PMD.2017.7726",
+      "existing_library_path": "../Shared/Articles/Louboutin - Non-Galois cubic number fields with exceptional units (2017).pdf",
+      "sha256": "577510A79B592D5D2EB804F587639CBC5D3A714A78DDFC5BC0FEE6EDFD47E1E0",
+      "version": "Published, Publ. Math. Debrecen 91/1-2 (2017), 153-170",
+      "accessed_on": "2026-10-02",
+      "acquired_on": null,
+      "originating_project": null,
+      "reading_scope": "Official web PDF, printed pp.153-154: definition of exceptional unit, defining polynomial, discriminant and Ennola's fundamental-unit conjecture. Existing library copy reused by reference; only its hash was checked locally. The whole paper was not audited in this preparation.",
+      "library_modified": false
+    },
+    {
+      "id": "magma-calculator",
+      "url": "https://magma.maths.usyd.edu.au/calc/",
+      "accessed_on": "2026-10-02",
+      "reading_scope": "Public calculator availability and service limits; actual server version and execution settings recorded per job."
+    },
+    {
+      "id": "magma-rank-documentation",
+      "url": "https://magma.maths.usyd.edu.au/magma/handbook/text/1570",
+      "accessed_on": "2026-10-02",
+      "version": "Online handbook V2.29",
+      "reading_scope": "RankBounds, MordellWeilShaInformation, meaning of returned bounds, Effort setting, and version changes before V2.21. Local V2.20 documentation is checked separately for fallback commands."
+    }
+  ],
+  "review_runs": [
+    {
+      "id": "review-2026-10-02",
+      "reviewed_on": "2026-10-02",
+      "manuscript": "Draft/ennola-squareclasses.tex",
+      "manuscript_sha256": "F7F930127E52BB9660482E9951D58C8FF5627D52FFA096F799CB3276C959FE3C",
+      "report": "build/review-2026-10-02/report.md",
+      "source_manifest": "build/review-2026-10-02/source-manifest.json",
+      "scope": "Fresh whole-manuscript review; source-specific reading scopes and limitations are recorded in the source manifest. Earlier preparation scopes are unchanged."
+    }
+  ]
+}

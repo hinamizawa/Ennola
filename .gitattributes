@@ -1,0 +1,4 @@
+# Keep baseline source and evidence bytes stable.
+* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# Original snapshots and generated checks live in build/.
+*.pdf binary
