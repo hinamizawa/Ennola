@@ -40,4 +40,5 @@ The [parallel integer rank-five search of 2 October 2026](Computations/integer-r
 - Reproducible native commands and verified tool paths: [Environment.md](Environment.md).
 - Original bytes and inventory: `build/submission-preparation-2026-10-02/original/` and `initial-inventory.json`.
 - Proof preservation, compilation, finite computations and visual inspection are separate checks. Editorial preparation is not an independent whole-paper proof audit, an exhaustive priority search, or a prediction of acceptance.
-- No submission, email, commit, or push has been made. The author's existing AI-assistance statement remains in the manuscript for author review.
+- No manuscript submission or email has been made. The author's existing AI-assistance statement remains in the manuscript for author review.
+- On 3 October 2026, the owner confirmed that the project is now a Git repository and authorized a standing workflow: after each major modification, run relevant checks, review the diff and outgoing files and history, stage task-owned changes, commit, push without force to the configured remote, and verify the remote commit. The verified setup is `main` tracking `origin/main` at `https://github.com/hinamizawa/Ennola.git`; [AGENTS.md](AGENTS.md) and [Environment.md](Environment.md) give the instructions and commands.

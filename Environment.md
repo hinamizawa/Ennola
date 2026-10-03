@@ -42,4 +42,26 @@ The user described the historical computations as mainly public-calculator use a
 
 ## Git and preservation
 
-This directory has no `.git`; `git status` reports that it is not a repository. There is no verified branch or remote and no commit or push step. `.gitignore`, `.gitattributes` and `.editorconfig` are prospective project conventions. The 18 initial files, including all original configuration and the original manuscript/PDF, are hash-verified under `build/submission-preparation-2026-10-02/original/`.
+Git was verified on 3 October 2026: Git for Windows 2.55.0.windows.5, current branch `main`, upstream `origin/main`, and remote `origin` at `https://github.com/hinamizawa/Ennola.git`. Recheck the current branch, upstream, remote and working-tree state before changing or publishing files. `.gitignore`, `.gitattributes` and `.editorconfig` now apply to the repository. The 18 initial files, including all original configuration and the original manuscript/PDF, are hash-verified under `build/submission-preparation-2026-10-02/original/`.
+
+After every major modification, perform the relevant validation, inspect the final diff and outgoing files and history for unintended material, stage only task-owned changes, create a focused commit, push without force to the configured remote, and verify the remote branch against `HEAD`. This routine is authorized by the owner in [AGENTS.md](AGENTS.md). Preserve unrelated work and keep copyrighted source corpora, secrets and generated outputs out of outgoing changes. Report a blocked commit or push explicitly.
+
+For the verified `main` / `origin` setup, use the following commands, replacing the path list and commit message with the actual task-owned files and change description. Inspect the staged diff and outgoing history before pushing.
+
+```powershell
+git status --short
+git branch -vv
+git remote -v
+git diff --check
+git diff
+git add -- AGENTS.md README.md Environment.md PROJECT_KNOWLEDGE.md
+git diff --cached --check
+git diff --cached
+git commit -m "Document standing commit and push workflow"
+git log --oneline origin/main..HEAD
+git diff --stat origin/main..HEAD
+git push origin main
+git rev-parse HEAD
+git ls-remote --heads origin refs/heads/main
+git status --short
+```
