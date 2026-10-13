@@ -58,6 +58,16 @@
       "report": "build/review-2026-10-02/report.md",
       "source_manifest": "build/review-2026-10-02/source-manifest.json",
       "scope": "Fresh whole-manuscript review; source-specific reading scopes and limitations are recorded in the source manifest. Earlier preparation scopes are unchanged."
+    },
+    {
+      "id": "polish-2026-10-13",
+      "reviewed_on": "2026-10-13",
+      "manuscript": "Draft/ennola-squareclasses.tex",
+      "input_manuscript_sha256": "3F2BC00B7D6F4281FD60BAD82E9479EB7A342168EA0DBFCB0F4BED06319B5B8E",
+      "manuscript_sha256": "ED12A612B398E01A449F8ED55751359F577B03853356E28BFEB778705428C120",
+      "report": "Review/2026-10-13-polish-proofreading.md",
+      "source_manifest": "build/polish-2026-10-13/source-manifest.json",
+      "scope": "Editorial revision based on the Shared-library terminology report, followed by a complete current-source proofreading pass and inspection of all 13 rendered pages. The author's layout and live bibliography are preserved. This was not a new comprehensive proof audit or an exact-computation rerun; prior reading scopes are not represented as repeated."
     }
   ]
 }
