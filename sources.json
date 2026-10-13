@@ -47,6 +47,22 @@
       "accessed_on": "2026-10-02",
       "version": "Online handbook V2.29",
       "reading_scope": "RankBounds, MordellWeilShaInformation, meaning of returned bounds, Effort setting, and version changes before V2.21. Local V2.20 documentation is checked separately for fallback commands."
+    },
+    {
+      "id": "Washington1987",
+      "title": "Class numbers of the simplest cubic fields",
+      "doi": "10.1090/S0025-5718-1987-0866122-8",
+      "url": "https://www.jstor.org/stable/2007897",
+      "metadata_url": "https://api.crossref.org/works/10.1090/S0025-5718-1987-0866122-8",
+      "existing_library_path": "../Shared/Articles/Washington - Class numbers of the simplest cubic fields (1987).pdf",
+      "sha256": "3B5787D0B47D1ADED1549C1F31EF4F6A8AA605F6003EA063F8EDD5F028A8FB40",
+      "version": "Published, Mathematics of Computation 48 (177) (1987), 371-384; existing JSTOR copy",
+      "accessed_on": "2026-10-13",
+      "acquired_on": null,
+      "originating_project": null,
+      "current_use_project": "Ennola",
+      "reading_scope": "Title and publication metadata; Section 3, printed pp.375-377, including Theorem 1 on p.375 and its squarefreeness and cyclic simplest-cubic setting. Used only for historical attribution in Relation to earlier work. The fresh report records the source reading; the theorem passage and existing hash were rechecked for the authorized polish, and DOI metadata was verified with Crossref. No new theorem application is introduced.",
+      "library_modified": false
     }
   ],
   "review_runs": [

@@ -4,6 +4,7 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
+$buildStartedUtc = [DateTimeOffset]::UtcNow
 $projectRoot = Split-Path -Parent $PSScriptRoot
 $sourcePath = (Resolve-Path -LiteralPath (Join-Path $projectRoot $Source)).Path
 $outputPath = [IO.Path]::GetFullPath((Join-Path $projectRoot $OutputDirectory))
@@ -49,7 +50,7 @@ try {
     }
 } finally {
     Pop-Location
-    [ordered]@{date='2026-10-02'; source=$sourcePath; inputs=$inputHashes; commands=$commands.ToArray()} | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath (Join-Path $outputPath 'build-record.json') -Encoding utf8
+    [ordered]@{date=$buildStartedUtc.ToString('yyyy-MM-dd'); started_utc=$buildStartedUtc.ToString('o'); finished_utc=[DateTimeOffset]::UtcNow.ToString('o'); source=$sourcePath; inputs=$inputHashes; commands=$commands.ToArray()} | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath (Join-Path $outputPath 'build-record.json') -Encoding utf8
 }
 $log = Get-Content -LiteralPath (Join-Path $outputPath "$jobName.log") -Raw
 if ($log -match 'There were undefined references|Citation .+ undefined|Reference .+ undefined|Rerun to get cross-references right|has been referenced but does not exi') {

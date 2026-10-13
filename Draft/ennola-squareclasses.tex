@@ -47,7 +47,7 @@
 
 \begin{document}
 \begin{abstract}
-  For every prime $\ell\geq5$ and integer $n\geq2$, we construct an Ennola cubic field with a specified prime ideal above $\ell$ whose class has exact order $2^n$. The same squareclass obstructions give four independent rational points on associated elliptic curves. A Pell equation describes all parameters satisfying the required square and congruence conditions. A genus-one base change gives five independent sections that generate a subgroup saturated at two. It also yields infinitely many elliptic curves over $\Q$, pairwise nonisomorphic over $\overline{\Q}$, with rank at least five.
+  For every prime $\ell\geq5$ and integer $n\geq2$, we construct an Ennola cubic field with a specified prime ideal above $\ell$ whose class has exact order $2^n$. For parameters satisfying two square conditions and explicit congruences, the same squareclass obstructions give four independent rational points on the associated elliptic curves. A Pell equation describes all such parameters. A genus-one base change gives five independent sections that generate a subgroup saturated at two. It also yields infinitely many elliptic curves over $\Q$, pairwise nonisomorphic over $\overline{\Q}$, with rank at least five.
 \end{abstract}
 \maketitle
 
@@ -73,6 +73,7 @@ We use the following notation and conventions. For a number field $L$, $\Nm_{L/\
 
 Our first result prescribes both the rational prime and the exact order of a prime ideal class.
 
+\begin{samepage}
 \begin{theorem}\label{thm:prescribed-prime}
   Let $\ell\geq5$ be a rational prime. For integers $n\geq2$, put $N=2^n$ and
   \[
@@ -93,6 +94,7 @@ Our first result prescribes both the rational prime and the exact order of a pri
   \]
   For each fixed $\ell$, these parameters give infinitely many isomorphism classes of fields $K_a$ as $n$ varies.
 \end{theorem}
+\end{samepage}
 
 The change of linear form at $137$ is needed for the stated prime-ideal construction; see Remark~\ref{rem:137}. The order $\Z[\theta]$ need not be maximal. Proposition~\ref{prop:nonmaximal} gives an explicit infinite sequence where it is not.
 
@@ -131,7 +133,7 @@ Ennola proved the description of units modulo squares recalled in Lemma~\ref{lem
 
 Lee \cite[Theorem 1.1]{Lee2010} constructs ideal classes of any prescribed order in infinitely many fields of the same cubic family, written using $\rho=1/(\theta-1)$ and parameter $a+1$. Theorem~\ref{thm:prescribed-prime} fixes the rational prime in advance and gives uniform formulas for a prime ideal above it whose class has the prescribed power-of-two order. The norm bound of Kala--Sgallov\'a--Tinkov\'a \cite{KalaSgallovaTinkova2025} gives an alternative exact-order argument for the first parameter formula when $\mathcal O_{K_a}=\Z[\theta]$. Under the same assumption, Louboutin's earlier bound \cite[Theorem 10]{Louboutin2001} gives this argument for $a\geq59$. Our local proof also applies when $\Z[\theta]$ is nonmaximal, as in Proposition~\ref{prop:nonmaximal}. Related power-residue constructions occur in Pincus--Washington \cite[\S4]{PincusWashington2023}.
 
-Connections between rational points on elliptic curves and ideal classes of cubic fields appear in Duquesne \cite{Duquesne2001} and Laoudi \cite{Laoudi2006}; Buell--Ennola \cite{BuellEnnola1995} study the $3$-primary part of the class group of the quadratic resolvent of this family. For related elliptic curves, Walsh gives a Pell construction of rank at least three for sufficiently large parameters under auxiliary irreducibility hypotheses \cite[Theorem 1.1]{Walsh2023}, and a four-point construction with computational evidence of independence \cite[\S2, Type III]{Walsh2024}. Here we prove a rank lower bound of four together with cubic ideal-class results under explicit congruence conditions, and classify all parameters in the resulting Pell construction.
+For simplest cubic fields, Washington \cite[\S3, Theorem 1]{Washington1987} established a connection between elliptic-curve ranks and cubic ideal classes; related connections are developed by Duquesne \cite{Duquesne2001} and Laoudi \cite{Laoudi2006}. Buell--Ennola \cite{BuellEnnola1995} study the $3$-primary part of the class group of the quadratic resolvent of the Ennola family. For related elliptic curves, Walsh gives a Pell construction of rank at least three for sufficiently large parameters under auxiliary irreducibility hypotheses \cite[Theorem 1.1]{Walsh2023}, and a four-point construction with computational evidence of independence \cite[\S2, Type III]{Walsh2024}. Here we prove a rank lower bound of four together with cubic ideal-class results under explicit congruence conditions, and classify all parameters in the resulting Pell construction.
 
 \section{Unit squareclasses and local obstructions}
 
@@ -496,7 +498,7 @@ The proof uses signatures and congruences modulo four, as in \cite[\S I.6(b--c) 
   This is a contradiction, and a finite collection of fields cannot account for the infinite sequence.
 \end{proof}
 
-We now consider the equation defining $E_a$ over function fields over $\Q$; the preceding restrictions that $a$ be an integer and $a\geq3$ are not imposed in the remaining constructions.
+We now allow $a$ to be a rational function on a curve over $\Q$. The restrictions $a\in\Z$ and $a\geq3$ no longer apply to the remaining constructions.
 
 \begin{corollary}\label{cor:rational-family}
   For an indeterminate $t$, put
@@ -543,7 +545,7 @@ On $Z\ne0$ put $u=U/Z$, $v=V/Z$, $w=W/Z$, and $a=(u^2-73)/12$. The second equati
   \[
     \lambda\mu(-20\lambda+6\mu)(-2861\lambda-1015\mu).
   \]
-  This homogeneous polynomial has four distinct zeros $[\lambda:\mu]\in\mathbb P^1$, so the Jacobian criterion shows that the intersection is smooth. As a complete intersection of two quadrics in $\mathbb P^3$, it is geometrically connected. The adjunction formula gives $\omega_C\simeq\mathcal O_C$ for the canonical sheaf $\omega_C$, so $C$ has genus one. The same calculation gives good reduction at $17,19,31$: none divides $2\cdot20\cdot6\cdot2861\cdot1015\cdot37466$.
+  This homogeneous polynomial has four distinct zeros $[\lambda:\mu]\in\mathbb P^1$. Each singular quadric in this diagonal pencil has its vertex at a coordinate point, and none of these points lies on the intersection. The Jacobian criterion therefore shows that the intersection is smooth. As a complete intersection of two quadrics in $\mathbb P^3$, it is geometrically connected. The adjunction formula gives $\omega_C\simeq\mathcal O_C$ for the canonical sheaf $\omega_C$, so $C$ has genus one. The same calculation gives good reduction at $17,19,31$: none divides $2\cdot20\cdot6\cdot2861\cdot1015\cdot37466$.
 
   To show that $C(\Q)$ is infinite, we compare its rational points with the torsion bound from good reduction. Direct enumeration gives
   \[
@@ -555,7 +557,7 @@ On $Z\ne0$ put $u=U/Z$, $v=V/Z$, $w=W/Z$, and $a=(u^2-73)/12$. The second equati
   \[
     [U:V:W:Z]=[\pm59:\pm1679:\pm977:31]
   \]
-  give eight distinct rational points. Choose one as origin, identifying $C$ with its Jacobian. Prime-to-$p$ torsion injects under good reduction \cite[Proposition VII.3.1(b)]{Silverman2009}. Reduction at $17$ excludes every odd primary torsion subgroup except possibly the $17$-primary subgroup; reduction at $31$ excludes that subgroup as well. The two-primary torsion injects at both primes, so its order divides $\gcd(16,28)=4$. At least one of the eight rational points therefore has infinite order, and $C(\Q)$ is infinite.
+  give eight distinct rational points. Choose one as origin, identifying $C$ with its Jacobian. By properness, this point extends to a section of each smooth model at the stated primes, giving good reduction for the resulting elliptic curve. Prime-to-$p$ torsion injects under good reduction \cite[Proposition VII.3.1(b)]{Silverman2009}. Reduction at $17$ excludes every odd primary torsion subgroup except possibly the $17$-primary subgroup; reduction at $31$ excludes that subgroup as well. The two-primary torsion injects at both primes, so its order divides $\gcd(16,28)=4$. At least one of the eight rational points therefore has infinite order, and $C(\Q)$ is infinite.
 
   We next prove independence by specializing at $c_0=[-59:1679:977:31]$ with $a_0=-5556/961$. The five points become
   \[
@@ -576,18 +578,20 @@ On $Z\ne0$ put $u=U/Z$, $v=V/Z$, $w=W/Z$, and $a=(u^2-73)/12$. The second equati
       1 & 0 & 1 & 0 & 0
     \end{pmatrix},
   \end{equation}
-  whose determinant is $1$ in $\F_2$. If a product of these elements were a square in $\Q(\theta)$, its nonzero residue at each chosen prime would be a square. Invertibility of the matrix therefore excludes all $31$ nonempty squareclass products. The descent argument in the proof of Theorem~\ref{thm:four-points} proves independence modulo torsion of the five specialized points. This argument uses only irreducibility and nonsingularity, so it applies at the rational parameter $a_0$. Since $a$ is regular at $c_0$ and the discriminant is a unit in $\mathcal O_{C,c_0}$, the projective Weierstrass equation defines an elliptic scheme over this local ring. Properness extends every $\Q(C)$-point over the local ring, and specialization is a group homomorphism. A nontrivial integral relation modulo torsion over $\Q(C)$ would specialize to such a relation in the fibre at $c_0$. Thus the five sections are independent over $\Q(C)$.
+  whose determinant is $1$ in $\F_2$. If a product of these elements were a square in $\Q(\theta)$, its nonzero residue at each chosen prime would be a square. Invertibility of the matrix therefore excludes all $31$ nonempty squareclass products. The descent argument in the proof of Theorem~\ref{thm:four-points} proves independence modulo torsion of the five specialized points. This argument uses only irreducibility and nonsingularity, so it applies at the rational parameter $a_0$.
+
+  Since $a$ is regular at $c_0$ and the discriminant is a unit in $\mathcal O_{C,c_0}$, the projective Weierstrass equation defines an elliptic scheme over this local ring. Properness extends every $\Q(C)$-point over the local ring, and specialization is a group homomorphism. A nontrivial integral relation modulo torsion over $\Q(C)$ would specialize to such a relation in the fibre at $c_0$. Thus the five sections are independent over $\Q(C)$.
 
   To prove saturation at two, put $F=\Q(C)$ and $\mathcal R=\mathcal O_{C,c_0}$. This local ring is an integrally closed discrete valuation ring with residue field $\Q$, and $a$ is regular at $c_0$. A root of the monic polynomial $f_a\in\mathcal R[X]$ in $F$ would belong to $\mathcal R$ and reduce to a rational root of $f_{a_0}$. Hence $E_a(F)[2]=0$. Denote the five sections by $P_1,\ldots,P_5$. If $2R=\sum_i n_iP_i$ in $E_a(F)$, specialization at $c_0$ and the invertible residue matrix force every $n_i$ to be even. The point $R-\sum_i(n_i/2)P_i$ is then two-torsion and vanishes. This proves saturation at two.
 
-  Finally, we specialize to infinitely many fibres. The function $a$ is nonconstant on $C$, and the formula for $j(E_a)$ in the proof of Theorem~\ref{thm:pell} shows that $j$ is nonconstant as well. The specialization theorem \cite[Theorem C.20.3]{Silverman2009} therefore makes specialization injective at all but finitely many points of $C(\Q)$. The five independent sections give rank at least five in infinitely many fibres over points of $C(\Q)$. The map $j:C\to\mathbb P^1$ has finite fibres, so these include infinitely many curves that are pairwise nonisomorphic over $\overline{\Q}$.
+  Finally, we specialize to infinitely many fibres. For fixed $u$, the two equations defining $C$ allow at most four affine pairs $(v,w)$, so $u$ is nonconstant on $C$. Hence $a=(u^2-73)/12$ is nonconstant, and the nonconstant rational function $j(E_a)$ displayed in the proof of Theorem~\ref{thm:pell} remains nonconstant on $C$. The specialization theorem \cite[Theorem C.20.3]{Silverman2009} therefore makes specialization injective at all but finitely many points of $C(\Q)$. The five independent sections give rank at least five in infinitely many fibres over points of $C(\Q)$. The map $j:C\to\mathbb P^1$ has finite fibres, so these include infinitely many curves that are pairwise nonisomorphic over $\overline{\Q}$.
 \end{proof}
 
 \begin{remark}\label{rem:rank-five-integrality}
   The construction in Proposition~\ref{prop:rank-five-rational} has exactly one integral value of $a$. If $a\in\Z$, then $u^2=12a+73\geq0$ and $w^2=577-72a\geq0$ give $-6\leq a\leq8$. A rational number whose square is an integer is an integer. The first square condition leaves $a=-6,-4,-2,4,8$; the corresponding values of $v^2$ are $2881,3361,3841,5281,6241$, of which only $6241=79^2$ is a square. Hence $a=8$, realized by $(u,v,w)=(13,79,1)$.
 \end{remark}
 
-For integers $a$, the first square condition gives $u^2\equiv1\pmod{12}$. After changing the sign of $u$ if necessary, write $u=6s+1$; then $a=3s^2+s-6$. We wonder whether there are infinitely many integers $s$ with $3s^2+s-6\geq3$ for which $\rank E_{3s^2+s-6}(\Q)\geq5$.
+For integers $a$, the first square condition gives $u^2\equiv1\pmod{12}$. After changing the sign of $u$ if necessary, write $u=6s+1$; then $a=3s^2+s-6$. This raises the question whether there are infinitely many integers $s$ with $3s^2+s-6\geq3$ for which $\rank E_{3s^2+s-6}(\Q)\geq5$.
 
 
 % \section*{Use of AI-assisted tools}
