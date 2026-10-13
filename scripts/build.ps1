@@ -57,4 +57,10 @@ if ($log -match 'There were undefined references|Citation .+ undefined|Reference
     throw 'Unresolved references remain; inspect the final log.'
 }
 Select-String -LiteralPath (Join-Path $outputPath "$jobName.log") -Pattern 'Warning|Overfull|Underfull|Output written'
+$recordPath = Join-Path $outputPath 'build-record.json'
+$record = Get-Content -LiteralPath $recordPath -Raw | ConvertFrom-Json
+$outputHashes = @('pdf', 'bbl' | ForEach-Object { Get-FileHash -LiteralPath (Join-Path $outputPath "$jobName.$_") -Algorithm SHA256 | Select-Object Path,Hash })
+$record | Add-Member -NotePropertyName status -NotePropertyValue 'pass'
+$record | Add-Member -NotePropertyName outputs -NotePropertyValue $outputHashes
+$record | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath $recordPath -Encoding utf8
 Get-FileHash -LiteralPath (Join-Path $outputPath "$jobName.pdf") -Algorithm SHA256

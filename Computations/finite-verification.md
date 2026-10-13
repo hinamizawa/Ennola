@@ -1,6 +1,6 @@
 # Explanation of the optional finite checks
 
-Manuscript: **Prescribed ideal classes and elliptic points in Ennola cubic fields**, by Junyu Lu. Prepared on 2 October 2026.
+Manuscript: **Prescribed Ideal Classes in Ennola Cubic Fields and Rational Points on Associated Elliptic Curves**, by Junyu Lu. Computation performed on 2 October 2026; explanation updated on 13 October 2026.
 
 The manuscript gives written proofs with explicit identities, residue calculations, finite tables and a squareclass matrix. [verify-finite.m](verify-finite.m) provides optional checks of that arithmetic. None of its theorems invokes a software rank bound, point search, class-group computation or unit-group computation. Software-dependent exact-rank examples have been removed from the submission. The mathematical proof reductions and cited theorems remain essential; running this file is not a substitute for checking them.
 
@@ -21,11 +21,13 @@ The three sample exceptional-prime reductions do not prove the general valuation
 
 The final file passed through the [public Magma calculator](https://magma.maths.usyd.edu.au/calc/) on 2 October 2026, using V2.29-10 and explicit seed one. The transmitted input was 12183 bytes, within the service's 50000-byte limit. All three section markers and `ENNOLA_FINITE_PASS` appeared, with no reported errors. The program-reported CPU time was 0.030 seconds; the service reported 0.050 seconds including its wrapper. All assertions and the final marker are inside a procedure, so an assertion failure aborts before the marker.
 
+During the submission check on 13 October 2026, the script and its scope were read against the current source, and the source, transmitted input and raw response hashes were checked against this recorded run. The code is unchanged. No new execution was performed; the run below remains dated 2 October.
+
 - Source SHA-256: `7b6bbe20ae37346281b51359c1e83b6a982f13a278870089bc5af85cc7565eee`.
 - Transmitted-input SHA-256: `b25d0d20320417598dab07247caf79fc73c5d416b640c07a23b42d65b5767be9`.
 - [Run record](../build/online-magma/20261002T104407585389Z-finite-submission-final/record.json), [transmitted input](../build/online-magma/20261002T104407585389Z-finite-submission-final/input.m), [raw response](../build/online-magma/20261002T104407585389Z-finite-submission-final/response.xml), and [plain output](../build/online-magma/20261002T104407585389Z-finite-submission-final/output.txt).
 
-From the project root, using the Python interpreter documented in `Environment.md`, run:
+From the project or exported package root, using Python 3, run:
 
 ```text
 python scripts/magma-online.py Computations/verify-finite.m --name finite-check --expect-pass ENNOLA_FINITE_PASS
@@ -35,4 +37,4 @@ Alternatively paste the self-contained file into the public calculator. The file
 
 ## Software use and disclosure
 
-The supplied finite check used the publicly available calculator. Separate development attempts for examples now omitted from the manuscript were rerun with local V2.20-9 after public timeouts; they are not evidence for any submitted claim. The author confirmed on 2 October 2026 that the local installation is covered by a valid license. The manuscript retains its AI-assistance disclosure. This file and the accompanying code provide the separate explanation requested in the [journal's author instructions](https://publi.math.unideb.hu/for-authors).
+The supplied finite check used the publicly available calculator. Separate development attempts for examples now omitted from the manuscript were rerun with local V2.20-9 after public timeouts; they are not evidence for any submitted claim. The author confirmed on 2 October 2026 that the local installation is covered by a valid license. The accompanying cover letter discloses AI assistance. This file and the code provide the separate explanation requested in the [journal's author instructions](https://publi.math.unideb.hu/for-authors).

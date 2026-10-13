@@ -1,6 +1,6 @@
 # Environment and commands
 
-Verified on 2 October 2026 for `C:/Users/jylu/Documents/Ennola`. Use native Windows PowerShell, never WSL, and do not alter `TEXINPUTS`.
+Build and PDF tools rechecked on 13 October 2026 for `C:/Users/jylu/Documents/Ennola`. Local Magma was not rerun in this submission check. Use native Windows PowerShell, never WSL, and do not alter `TEXINPUTS`.
 
 ## Available tools
 
@@ -10,7 +10,7 @@ Verified on 2 October 2026 for `C:/Users/jylu/Documents/Ennola`. Use native Wind
 | MiKTeX pdfLaTeX | MiKTeX-pdfTeX 4.27 / MiKTeX 26.5 | `C:/Users/jylu/AppData/Local/Programs/MiKTeX/miktex/bin/x64/pdflatex.exe` |
 | MiKTeX BibTeX | 4.2 / MiKTeX 26.5 | `C:/Users/jylu/AppData/Local/Programs/MiKTeX/miktex/bin/x64/bibtex.exe` |
 | PDF renderer | Poppler 24.04.0 | `C:/Users/jylu/AppData/Local/Programs/MiKTeX/miktex/bin/x64/pdftoppm.exe` |
-| Python | 3.12.14; pypdf 6.16.2; Pillow 12.3.0 | `C:/Users/jylu/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe` |
+| Python | 3.12.14; pypdf 6.16.2; Pillow 12.3.0; ReportLab 4.4.9 | `C:/Users/jylu/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe` |
 | Local Magma | Executable present; each actual run records the version | `C:/Program Files (x86)/Magma/magma.exe` |
 
 There is no project `.venv`. The inherited Shared PDF-intake interpreter path is also absent. Use the existing bundled Python explicitly; no environment or dependency installation is required. LaTeX is edited directly with file-editing tools. Python handles document inspection, provenance and the public calculator client, not mathematical verification.
@@ -19,14 +19,27 @@ There is no project `.venv`. The inherited Shared PDF-intake interpreter path is
 
 ```powershell
 ./scripts/build.ps1
-./scripts/build.ps1 -Source 'Draft/ennola-squareclasses-submission.tex' -OutputDirectory 'build/submission-preparation-2026-10-02/candidate'
+./scripts/build.ps1 -Source 'Draft/ennola-squareclasses-submission.tex' -OutputDirectory 'build/submission'
 ```
 
-The script copies the source, bibliography and class into the selected build directory, then runs pdfLaTeX, BibTeX and further pdfLaTeX passes until references settle (at least three and at most five TeX passes). This prevents old editor-generated auxiliary files in `Draft/` from shadowing the new build. It records input SHA-256 hashes, commands, exit codes and logs, and rejects unresolved references. Automatic package installation and shell escape are disabled. The installed tools required normal-user execution after the restricted shell returned `Access is denied`; that permission does not change the engine or environment variables.
+The script copies the source, bibliography and class into the selected build directory, then runs pdfLaTeX, BibTeX and further pdfLaTeX passes until references settle (at least three and at most five TeX passes). This prevents old editor-generated auxiliary files in `Draft/` from shadowing the new build. It records input SHA-256 hashes, commands, exit codes and logs, rejects unresolved references, and records successful PDF and BBL hashes for the export check. Automatic package installation and shell escape are disabled. The final logs identify pdfTeX 1.40.29 (MiKTeX 26.5) and BibTeX 0.99e; the table gives the distribution executable versions.
 
-The unmodified `Draft/publmathdeb.cls` was downloaded from the [official journal](https://publi.math.unideb.hu/publmathdeb.cls). Its SHA-256 is `2DBDC5DA9E088DCB85BBFC3D95EB6142DF8C8BDE0D46093AFADF53766E8A456F`. The class identifies itself as version 2.0, 9 March 2006. The source preamble supplies the MSC 2020 label. It leaves issue, volume and submission-date fields unset.
+The unmodified `Draft/publmathdeb.cls` was downloaded from the [official journal](https://publi.math.unideb.hu/publmathdeb.cls). Its SHA-256 is `2DBDC5DA9E088DCB85BBFC3D95EB6142DF8C8BDE0D46093AFADF53766E8A456F`. The class identifies itself as version 2.0, 9 March 2006. The submission source follows the journal's `draft` example; its hyperref draft warning and disabled PDF links are expected. The source preamble supplies the MSC 2020 label. It leaves issue, volume and submission-date fields unset.
 
 Generated output goes under `build/`. Original editor-generated files beside the draft are preserved until final PDF synchronization; they are not the evidence for the new build. Render the current PDF for visual inspection with the explicit `pdftoppm.exe` above. Compilation and visual inspection do not verify mathematical correctness.
+
+## Cover letter and export
+
+The PMD cover letter is edited in `Submission/cover-letter-pmd.md`. Its renderer uses the existing Windows Georgia font, produces a one-page PDF, checks the title against the submission source, and writes `build/cover-letter-pmd-record.json`. Preserve the current PDF before replacing it when preparing a new revision.
+
+```powershell
+& 'C:/Users/jylu/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe' scripts/render-cover-letter.py
+./scripts/package-submission.ps1 -BuildDirectory 'build/submission' -OutputDirectory 'build/ennola-pmd-submission-new'
+```
+
+Choose a new export directory each time. The package contains the Debrecen source under the portable name `Draft/ennola-squareclasses.tex`, its matching PDF and BBL, the bibliography and journal class, the PMD cover letter, and the optional finite-check supplement. The script checks manuscript body agreement while permitting the intentional preamble and whitespace differences. It checks build output hashes, the rendered cover letter, the unchanged finite verifier and its historical evidence, then verifies every ZIP entry. The supplied optional execution record remains dated 2 October 2026; packaging does not rerun it.
+
+The checked 13 October build directories are `build/submission-check-2026-10-13/main/` and `build/submission-check-2026-10-13/submission/`. The current package was made with the latter as `-BuildDirectory` and `build/ennola-pmd-submission-2026-10-13` as `-OutputDirectory`.
 
 ## Computations
 

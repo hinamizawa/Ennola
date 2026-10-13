@@ -1,4 +1,4 @@
-\documentclass[leqno]{publmathdeb}
+\documentclass[draft]{publmathdeb}
 
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -78,26 +78,26 @@ We use the following notation and conventions. For a number field $L$, $\Nm_{L/\
 Our first result prescribes both the rational prime and the exact order of a prime ideal class.
 
 \begin{samepage}
-\begin{theorem}\label{thm:prescribed-prime}
-  Let $\ell\geq5$ be a rational prime. For integers $n\geq2$, put $N=2^n$ and
-  \[
-    (D,a)=
-    \begin{cases}
-      \left(4,(\ell^N-73)/12\right),     & \ell\ne137, \\[2pt]
-      \left(24,(137^N-14353)/552\right), & \ell=137.
-    \end{cases}
-  \]
-  Then $a$ is an integer with $a\geq3$ and $a\equiv2\pmod4$. Moreover, the ideal
-  \[
-    \mathfrak p=(\ell,D\theta-D+1)\mathcal O_{K_a}
-  \]
-  is prime of norm $\ell$, and
-  \[
-    \mathfrak p^N=(D\theta-D+1),\qquad
-    \ord_{\Cl(K_a)}[\mathfrak p]=N.
-  \]
-  For each fixed $\ell$, these parameters give infinitely many isomorphism classes of fields $K_a$ as $n$ varies.
-\end{theorem}
+  \begin{theorem}\label{thm:prescribed-prime}
+    Let $\ell\geq5$ be a rational prime. For integers $n\geq2$, put $N=2^n$ and
+    \[
+      (D,a)=
+      \begin{cases}
+        \left(4,(\ell^N-73)/12\right),     & \ell\ne137, \\[2pt]
+        \left(24,(137^N-14353)/552\right), & \ell=137.
+      \end{cases}
+    \]
+    Then $a$ is an integer with $a\geq3$ and $a\equiv2\pmod4$. Moreover, the ideal
+    \[
+      \mathfrak p=(\ell,D\theta-D+1)\mathcal O_{K_a}
+    \]
+    is prime of norm $\ell$, and
+    \[
+      \mathfrak p^N=(D\theta-D+1),\qquad
+      \ord_{\Cl(K_a)}[\mathfrak p]=N.
+    \]
+    For each fixed $\ell$, these parameters give infinitely many isomorphism classes of fields $K_a$ as $n$ varies.
+  \end{theorem}
 \end{samepage}
 
 The change of linear form at $137$ is needed for the stated prime-ideal construction; see Remark~\ref{rem:137}. The order $\Z[\theta]$ need not be maximal. Proposition~\ref{prop:nonmaximal} gives an explicit infinite sequence where it is not.
@@ -450,10 +450,10 @@ The proof uses signatures and congruences modulo four, as in \cite[\S I.6(b--c) 
       \toprule
       Initial solution $(v_0,u_0)$ & $a\bmod52$ & Admissible exponents $k$ \\
       \midrule
-      $(79,13)$        & $30$       & $6,15,22,27,34,43,50,55$          \\
-      $(79,13)$        & $34$       & $7,14,35,42$                      \\
-      $(191,41)$       & $30$       & $0,5,12,21,28,33,40,49$           \\
-      $(191,41)$       & $34$       & $13,20,41,48$                     \\
+      $(79,13)$                    & $30$       & $6,15,22,27,34,43,50,55$ \\
+      $(79,13)$                    & $34$       & $7,14,35,42$             \\
+      $(191,41)$                   & $30$       & $0,5,12,21,28,33,40,49$  \\
+      $(191,41)$                   & $34$       & $13,20,41,48$            \\
       \bottomrule
     \end{tabular}
   \end{table}
@@ -481,9 +481,9 @@ The proof uses signatures and congruences modulo four, as in \cite[\S I.6(b--c) 
       \toprule
       Modulus & Period & Coordinate & Vanishing indices $k$ \\
       \midrule
-      $137$   & $46$   & $u_k$      & none           \\
-      $23$    & $8$    & $v_k$      & none           \\
-      $2503$  & $2504$ & $v_k$      & $512,1764$     \\
+      $137$   & $46$   & $u_k$      & none                  \\
+      $23$    & $8$    & $v_k$      & none                  \\
+      $2503$  & $2504$ & $v_k$      & $512,1764$            \\
       \bottomrule
     \end{tabular}
   \end{table}

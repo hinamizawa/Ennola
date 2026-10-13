@@ -1,4 +1,4 @@
-3 October 2026
+13 October 2026
 
 Editors
 
@@ -6,7 +6,7 @@ Publicationes Mathematicae Debrecen
 
 Dear Editors,
 
-Please consider my manuscript, “Prescribed ideal classes and elliptic points in Ennola cubic fields,” for publication in Publicationes Mathematicae Debrecen.
+Please consider my manuscript, “Prescribed Ideal Classes in Ennola Cubic Fields and Rational Points on Associated Elliptic Curves”, for publication in Publicationes Mathematicae Debrecen.
 
 The paper studies ideal classes and rational points through squareclasses in Ennola's family of cubic fields. For every rational prime at least 5 and every power of two at least 4, it constructs a field with a specified prime ideal above that rational prime having exactly the prescribed class order. The proof applies in the maximal order, including cases where the defining monogenic order is nonmaximal.
 
@@ -16,18 +16,17 @@ The arguments develop and apply established results on units, local squareclasse
 
 The manuscript is unpublished and is not under consideration elsewhere.
 
-The manuscript discloses the use of OpenAI Codex (GPT-6) for mathematical auditing, preparation of verification scripts, reference checking, and editorial polishing. I retain responsibility for the mathematical content, references, and final text. Optional Magma verification code and a separate explanation of its scope are available as accompanying files.
+I used OpenAI Codex (GPT-6) for mathematical auditing, preparation of verification scripts, reference checking, and editorial polishing. The results and proofs were developed before this use of AI. I retain responsibility for the mathematical content, references, and final text.
+
+Optional Magma verification code and a separate explanation of its scope accompany the manuscript. The code checks finite arithmetic in the written proofs; the proofs do not depend on running it. The checks used the public calculator, and my local installation used for separate development work is covered by a valid license.
 
 Thank you for considering the manuscript.
 
-Yours sincerely,
+Best regards,
 
 Junyu Lu
 
 Department of Mathematics, Yang-En University
-
 Majia Town, Luojiang District, Quanzhou City, Fujian Province, China, 362014
-
 jy.lu@outlook.com
-
 ORCID: 0009-0001-4973-3198

@@ -1,6 +1,16 @@
 # Inventory and submission preparation
 
-Completed on 2 October 2026 for **Publicationes Mathematicae Debrecen**. The prepared [candidate](Draft/ennola-squareclasses-submission.tex) has been synchronized byte for byte to [ennola-squareclasses.tex](Draft/ennola-squareclasses.tex). The [current PDF](Draft/ennola-squareclasses.pdf) has 18 A4 pages. The [submission package](build/ennola-pmd-submission-2026-10-02.zip) contains the PDF, source, bibliography, journal class, optional finite-check code, separate explanation and successful run evidence.
+## Current status: 13 October 2026
+
+The [current submission check](Submission/submission-check-2026-10-13.md) covers the substantially revised Debrecen source, the official instructions, source preservation, native builds, rendered pages and export consistency. Both TeX sources, including the author's abstract, remain byte-identical to their initial snapshots for this check. The submission source keeps `draft`, following the journal's example. Its PDF has 19 A4 pages; the main `amsart` PDF has 13 letter-size pages. Their document contents agree apart from source whitespace, while their layout preambles differ.
+
+The PMD cover letter now uses the current title and carries the AI and software disclosures. Project descriptions, computation notes, build records and the export script have been updated. The [current package](build/ennola-pmd-submission-2026-10-13.zip) includes the journal source and PDF, the cover letter, and the optional finite-check supplement. This check does not constitute a new mathematical proof audit or exact-computation run. Nothing has been emailed or submitted.
+
+## Historical preparation: 2 October 2026
+
+The remainder of this document records the original preparation and its then-current files. Its source identities, page counts and source-equality statements are historical; use the 13 October report above for the current state.
+
+Completed on 2 October 2026 for **Publicationes Mathematicae Debrecen**. The then-prepared candidate was synchronized byte for byte to the main source. The PDF then had 18 A4 pages. The [historical submission package](build/ennola-pmd-submission-2026-10-02.zip) contains that PDF, source, bibliography, journal class, optional finite-check code, separate explanation and successful run evidence.
 
 ## Initial inventory
 

@@ -1,14 +1,21 @@
 # Submission files
 
-**Prescribed ideal classes and elliptic points in Ennola cubic fields**, Junyu Lu. Updated 3 October 2026, with Publicationes Mathematicae Debrecen and the Canadian Mathematical Bulletin under consideration.
+**Prescribed Ideal Classes in Ennola Cubic Fields and Rational Points on Associated Elliptic Curves**, Junyu Lu. Prepared for Publicationes Mathematicae Debrecen; checked on 13 October 2026.
 
-See [journal options and current files](journal-options-2026-10-03.md) for the two cover letters, confirmed publication-status declaration, current journal guidance, and remaining author-supplied declaration details. The current main and Debrecen PDFs have 16 and 18 pages, respectively; their source bodies agree except for the document-class line. The material below describes the existing Debrecen export workflow. The earlier ZIP is an older snapshot, and the packaging script must be adjusted before a new export.
+This README describes the exported package. Its 19-page manuscript uses the unmodified journal class and the `draft` option shown in the journal's example. The author's abstract is unchanged. Hyperlinks are disabled by draft mode; references and citations resolve normally. The separate 13-page `amsart` version remains in the working project.
 
-The manuscript PDF and its LaTeX source are in `Draft/`, together with the bibliography, generated bibliography and unmodified journal class. Optional arithmetic-check code is in `Computations/verify-finite.m`; the separate explanation is `Computations/finite-verification.md`. The explanation identifies the exact scope, software use and successful check. Its linked run records are included under `build/online-magma/`. Exported packages contain their own `manifest.json`; no current package manifest is implied by this working directory.
+The package contains:
+
+- `Draft/ennola-squareclasses.pdf` and `Draft/ennola-squareclasses.tex`: the matching journal PDF and source. The exported TeX is a snapshot of the working project's `ennola-squareclasses-submission.tex`.
+- `Draft/ennola.bib`, `Draft/ennola-squareclasses.bbl`, and `Draft/publmathdeb.cls`: the bibliography, generated references and journal class.
+- `Submission/cover-letter-pmd.md` and `Submission/cover-letter-pmd.pdf`: the current title, author details, publication-status declaration, and AI and software disclosures.
+- `Computations/verify-finite.m` and `Computations/finite-verification.md`: optional exact arithmetic checks and a separate explanation.
+- `scripts/magma-online.py` and the successful historical record under `build/online-magma/`: reproducible inputs, response and execution settings for the 2 October 2026 run. This run was not repeated during the submission check.
+- `manifest.json`: sizes and SHA-256 hashes of all supplied files except the manifest itself.
 
 The manuscript presents mathematical proofs with explicit finite calculations. It contains no software-dependent exact-rank examples. The optional code checks arithmetic in those proofs; the mathematical arguments and cited theorems do not depend on running it. Unfinished development experiments are excluded from this package.
 
-The [journal's author instructions](https://publi.math.unideb.hu/for-authors) request a PDF for initial submission and require disclosure of CAS and AI use. The code and its separate explanation are available for that purpose. The author confirmed that the local software used for development attempts is licensed. The manuscript retains the author's AI-assistance statement, now including editorial polishing. The cover letters include only the author's confirmed statement that the manuscript is unpublished and not under consideration elsewhere; other submission attestations have not been inferred.
+The [journal's author instructions](https://publi.math.unideb.hu/for-authors) were checked on 13 October 2026. Initial submission uses the PDF; the source files are also prepared here. The cover letter carries the AI disclosure and the author's confirmation of licensed local software use. The manuscript's proofs are independent of software output. The cover letter retains the author's confirmed statement that the manuscript is unpublished and not under consideration elsewhere. Other submission attestations have not been inferred, and no email or journal submission has been made.
 
 ## Build
 

@@ -1,12 +1,14 @@
 {
-  "project": "Prescribed ideal classes and elliptic points in Ennola cubic fields",
+  "project": "Prescribed Ideal Classes in Ennola Cubic Fields and Rational Points on Associated Elliptic Curves",
   "prepared_on": "2026-10-02",
+  "last_submission_check": "2026-10-13",
   "scope": "Sources used for this submission preparation; this is not a full bibliography audit or a transfer of another project's reading records.",
   "sources": [
     {
       "id": "pmd-author-instructions",
       "url": "https://publi.math.unideb.hu/for-authors",
       "accessed_on": "2026-10-02",
+      "last_verified_on": "2026-10-13",
       "reading_scope": "Submission, formal requirements, CAS code and explanation, AI transparency, and journal-class instructions.",
       "source_type": "official journal webpage"
     },
@@ -18,7 +20,7 @@
       "originating_project": "Ennola",
       "version": "2.0, 2006-03-09, as served by the journal on the acquisition date",
       "sha256": "2DBDC5DA9E088DCB85BBFC3D95EB6142DF8C8BDE0D46093AFADF53766E8A456F",
-      "reading_scope": "Class identification, title and author interfaces, default manuscript header, MSC edition support, theorem and bibliography interfaces.",
+      "reading_scope": "Class identification, title and author interfaces, default manuscript header, MSC edition support, theorem and bibliography interfaces. On 13 October 2026, rechecked the unchanged local hash and the draft option's graphics and hyperlink behavior against the journal's draft example.",
       "modified": false
     },
     {
@@ -66,6 +68,15 @@
     }
   ],
   "review_runs": [
+    {
+      "id": "submission-check-2026-10-13",
+      "reviewed_on": "2026-10-13",
+      "manuscript": "Draft/ennola-squareclasses-submission.tex",
+      "input_manuscript_sha256": "264B1F810E0A4111557DF0E4152A10542FABCB639C921C62C839F4044E14575E",
+      "manuscript_sha256": "264B1F810E0A4111557DF0E4152A10542FABCB639C921C62C839F4044E14575E",
+      "report": "Submission/submission-check-2026-10-13.md",
+      "scope": "Official journal requirements; complete current-source reading for submission structure and software dependencies; source and abstract preservation; reference resolution; MiKTeX builds and rendered output; cover-letter disclosures; export consistency. No fresh whole-paper proof audit, complete bibliographic source audit or exact-computation rerun. Historical reading and computation records retain their original dates."
+    },
     {
       "id": "review-2026-10-02",
       "reviewed_on": "2026-10-02",
