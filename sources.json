@@ -174,6 +174,79 @@
       },
       "finding": "Joris completely solves consecutive-index gcds, including unrestricted central intervals. Ando-Sato proves specified local generalized-Pascal gcd/lcm identities. Neither inspected full text directly classifies the proposed exact-d Gaussian integral ideal uniformly in the row parameters. This scope distinction does not certify novelty; generic interval and strong-divisibility proposals should be excluded as principal research claims.",
       "scope": "Source-only follow-up using the two supplied full texts under ARS verification guidance. Moved both PDFs unchanged into Shared, preserved original paths and reading scopes, and updated the local assessment. Earlier review-run scopes remain historical records. No new comprehensive literature search, independent whole-paper proof certification, Magma rerun, manuscript edit, compilation or submission."
+    },
+    {
+      "id": "restricted-gaussian-ideal-theorem-2026-10-23",
+      "reviewed_on": "2026-10-23",
+      "updates_review_run": "binomial-collaboration-2026-10-23",
+      "report": "Review/2026-10-23-restricted-gaussian-ideal-theorem.md",
+      "updated_assessment": "Review/2026-10-23-binomial-collaboration.md",
+      "source_manifest": "build/gaussian-ideal-family-2026-10-23/filed-manifest.json",
+      "reused_source": {
+        "id": "LiKimMa2016-current-use",
+        "library_path": "../Shared/Articles/Li, Kim and Ma - Gaussian binomial coefficients modulo cyclotomic polynomials (2016).pdf",
+        "sha256": "1E2E3FD85A24C5BFDFBFFD203FC503E445565350AD27D29F5F4E092AD43BE0CF",
+        "doi": "10.1016/j.jnt.2016.04.005",
+        "reading_scope": "Re-read the existing primary extract, printed pp.154-158, especially Theorem 1.1 and Theorem 1.6 p.157, with priority Remarks 1.3 and 1.7. No whole-paper audit; existing Shared source and other-project provenance preserved."
+      },
+      "proof_audit": "build/gaussian-ideal-family-2026-10-23/proof-audit.md",
+      "proof_audit_addendum": "build/gaussian-ideal-family-2026-10-23/row156-global-audit.md",
+      "novelty_log": "build/gaussian-ideal-family-2026-10-23/novelty.md",
+      "library_filing_record": "../Shared/Maintenance/2026-10-23-gaussian-ideal-family/README.md",
+      "verification_record": "build/gaussian-ideal-family-2026-10-23/verification.json",
+      "manuscript": "Draft/ennola-squareclasses.tex",
+      "manuscript_sha256": "D073779CC960913FC16163F810EBFFC84AF355C5F0CCBAE7FB0AFAB43DA0B43B",
+      "current_manuscript_scope": "Re-read thm:prescribed-prime and lem:local-power, including the derivative hypotheses, exceptional prime 137, exact class order and ramification-index-one consequence. Imported these results for the Gaussian specialization; no fresh whole-manuscript audit or new class-group construction is claimed.",
+      "sources": [
+        {
+          "id": "Mirmohades2018",
+          "doi": "10.48550/arXiv.1807.02100",
+          "library_path": "../Shared/Articles/Mirmohades - About categorification of cyclotomic integers and tensored N-complexes (2018).pdf",
+          "sha256": "AA3D4E1E3D41D359701150E8DC0FF6B5A8A4BE466B89A375D144A018B7414522",
+          "version": "arXiv:1807.02100v1, 5 July 2018, four pages",
+          "reading_scope": "All four pages text-read; Theorem 3.1 p.3 visually checked, with printed multiplicity errors recorded and corrected reasoning retained in the project log. Theorem 2.4 pp.2-3 compared. The unrestricted integral ideal is established prior art; the new restricted proof does not depend on the erroneous formulas."
+        },
+        {
+          "id": "Habiro2004",
+          "doi": "10.2977/PRIMS/1145475444",
+          "library_path": "../Shared/Articles/Habiro - Cyclotomic Completions of Polynomial Rings (2004).pdf",
+          "sha256": "F56094672ADA5BA71BBCE69785BE8C9D1377807C937B1011B1004F51DBF3071F",
+          "version": "Published, Publications of RIMS 40 (2004), 1127-1146",
+          "reading_scope": "Introduction and Lemma 4.1 with proof, p.1134, equations (4.1)-(4.2); source page visually inspected. Cyclotomic congruences and comaximality checked, without auditing completion or analytic-continuation results."
+        },
+        {
+          "id": "Suzuki2014",
+          "doi": "10.4064/bc100-0-12",
+          "library_path": "../Shared/Articles/Suzuki - On the colored Jones polynomials of ribbon links, boundary links and Brunnian links (2014).pdf",
+          "sha256": "DDACE51391EB2C3AA82DA548B0D3405B1A1DF89F44AF8A58827356F339846E56",
+          "version": "Published, Banach Center Publications 100 (2014), 213-222",
+          "reading_scope": "Definitions, Theorem 3.1 p.216 and algebraic section 4 pp.218-221, including Proposition 4.3 and Lemma 4.5; p.216 visually inspected. Factorial-product ideals compared with restricted Gaussian quotients. Knot-invariant results not audited."
+        },
+        {
+          "id": "DevalapurkarMisterka2023Author",
+          "doi": "10.48550/arXiv.2304.04739",
+          "library_path": "../Shared/Articles/Devalapurkar and Misterka - Generalized n-series and de Rham complexes (2023, author copy).pdf",
+          "sha256": "87EEEAAFD4612243D78A534E25A2396D9E9E4ED054920915957AF27E93B4B966",
+          "version": "Undated 52-page author copy, PDF build timestamp 2023-09-26; not verified equivalent to 51-page arXiv v1",
+          "reading_scope": "Introduction pp.3-5, Lemma 2.2.6 and proof p.9, Theorem 2.4.2 p.13, Proposition 2.4.8 p.14, and selected Lucas statements in section 3.4 pp.23-26. No whole-paper or de Rham theorem audit; author-copy numbering not equated with an unchecked arXiv revision."
+        }
+      ],
+      "magma_runs": [
+        "build/online-magma/20261023T112648349435Z-gaussian-infinite-family-20261023-network/record.json",
+        "build/online-magma/20261023T113244901009Z-gaussian-general-p-fibre-20261023/record.json",
+        "build/online-magma/20261023T115022403038Z-gaussian-row156-global-20261023/record.json"
+      ],
+      "mathematical_result": "Written proofs of the generic polynomial gcd, the infinite family n=1+p+p^2+p^3 with coefficient-localized residual ideal (p,(T-1)^(p-1)), and a selected-divisor formula for every even n at primes p dividing n-1. Derived exact ramified specialization valuations, CRT prime-ideal realization and the Ennola class-order corollary. The n=820, p=3 order-seven component rules out an overbroad prime-power family simplification. A complete global decomposition for row 156 gives J_156(alpha)=(5,(alpha-1)^4) in every number field of degree at most three, and J_156(theta^4)=(5,4theta-3) of class order 2^r in the explicit Ennola family above 5.",
+      "computation_scope": "Public Magma 2.29-10, explicit seed 1: normalization through even n=250; ten specified prime-power family cases; an independent polynomial recurrence for n=40; all even n=4..1000 and p dividing n-1, 2017 residue-order cases. Additional row-156 exact resultants, reductions, isolated factors and residue-field identities verified. All three pass markers present. These bounded cross-checks do not prove infinite statements, novelty or the imported class-order theorem.",
+      "novelty_assessment": "ARS guidance, Sider Scholar/OpenAlex, Google Scholar fallback and primary-source comparison. Unrestricted Gaussian ideal principality, cyclotomic pair ideals and carry formulas are known. No inspected theorem directly states the selected-divisor classification, but priority is unverified; the infinite family alone is a short deduction and the class-group consequences import existing results.",
+      "remaining_principal_gap": {
+        "title": "The Greatest Common Divisor of Binomial Coefficients with Non-coprime Indices",
+        "authors": "Chan-Liang Chung; Tse-Chung Yang",
+        "year": 2026,
+        "doi": "10.1007/s00009-026-03202-3",
+        "scope": "Abstract-only for both owner and assistant; no full theorem comparison claimed. Joris 1985 and Ando-Sato 1991 remain available from the supplied-source follow-up."
+      },
+      "scope": "Research theorem formulation, written proof and scoped mathematical audit; bounded exact computation; primary-source novelty comparison; four unchanged PDFs filed with provenance. Earlier reports and current-use records retain their historical scopes. No manuscript or bibliography edit, whole-manuscript fresh review, new exact class-group computation, compilation or submission."
     }
   ]
 }
