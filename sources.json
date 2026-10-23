@@ -95,6 +95,39 @@
       "report": "Review/2026-10-13-polish-proofreading.md",
       "source_manifest": "build/polish-2026-10-13/source-manifest.json",
       "scope": "Editorial revision based on the Shared-library terminology report, followed by a complete current-source proofreading pass and inspection of all 13 rendered pages. The author's layout and live bibliography are preserved. This was not a new comprehensive proof audit or an exact-computation rerun; prior reading scopes are not represented as repeated."
+    },
+    {
+      "id": "binomial-collaboration-2026-10-23",
+      "reviewed_on": "2026-10-23",
+      "manuscript": "Draft/ennola-squareclasses.tex",
+      "manuscript_sha256": "D073779CC960913FC16163F810EBFFC84AF355C5F0CCBAE7FB0AFAB43DA0B43B",
+      "report": "Review/2026-10-23-binomial-collaboration.md",
+      "source_manifest": "build/binomial-collaboration-2026-10-23/current-use-sources.json",
+      "acquisition_manifests": [
+        "build/binomial-collaboration-2026-10-23/acquisition-manifest.json",
+        "build/binomial-collaboration-2026-10-23/novelty-acquisition-manifest.json"
+      ],
+      "library_filing_record": "../Shared/Maintenance/2026-10-23-binomial-collaboration/README.md",
+      "verification_record": "build/binomial-collaboration-2026-10-23/verification.json",
+      "current_source_use": "Full extracted-text reading of Chung-Yang-Zhou 2025, selected rendered formulas, and relevant current manuscript arguments. Independent scoped use of Shared's Lee 2010, Louboutin 2017, Fray 1967, Howard 1972, Knuth-Wilf 1989 and Li-Kim-Ma 2016 sources. Additional primary-source versions, hashes, locators and actual reading scopes are recorded in the current-use manifest; earlier source records and other-project provenance were not rewritten. Louboutin 2001 was inventoried and extracted only, without substantive reliance.",
+      "novelty_method": "ARS academic-research-suite guidance, Sider Scholar/OpenAlex discovery, primary publisher/arXiv/author texts, and bounded independent evidence checks. Search-index misses were demonstrated; a negative search is not a priority certificate. General factorial-ideal, resultant-periodicity and Gaussian carry proposals are known or routine. Uniform exact-d and integral Gaussian-ideal classifications remain candidates with novelty unverified.",
+      "principal_access_gaps": [
+        {
+          "title": "The Greatest Common Divisor of Binomial Coefficients with Non-coprime Indices",
+          "authors": "Chan-Liang Chung; Tse-Chung Yang",
+          "year": 2026,
+          "doi": "10.1007/s00009-026-03202-3",
+          "scope": "Publisher abstract and metadata only; full text unavailable to both owner and assistant. No full theorem comparison claimed."
+        },
+        {
+          "title": "On the Proof of GCD and LCM Equalities Concerning the Generalized Binomial and Multinomial Coefficients",
+          "authors": "Ando; Sato",
+          "year": 1991,
+          "doi": "10.1007/978-94-011-3586-3_2",
+          "scope": "Publisher abstract and metadata only; potential overlap with generalized-divisibility claims unresolved. Other access/version limits are recorded in the report."
+        }
+      ],
+      "scope": "Collaboration assessment and bounded novelty check, including proved factorial-ideal and Gaussian-specialization deductions from existing theory and the current prescribed-prime theorem. Selected exact checks used public Magma 2.29-10, seed 1; full inputs and outputs remain under build/online-magma. Conjectures were tested only through even n=50000, not proved. This was not a fresh whole-manuscript proof audit, a comprehensive priority certification or a publication action. Manuscript, submission source, bibliography and preexisting cover-letter edits were preserved."
     }
   ]
 }
