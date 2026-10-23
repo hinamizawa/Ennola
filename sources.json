@@ -128,6 +128,52 @@
         }
       ],
       "scope": "Collaboration assessment and bounded novelty check, including proved factorial-ideal and Gaussian-specialization deductions from existing theory and the current prescribed-prime theorem. Selected exact checks used public Magma 2.29-10, seed 1; full inputs and outputs remain under build/online-magma. Conjectures were tested only through even n=50000, not proved. This was not a fresh whole-manuscript proof audit, a comprehensive priority certification or a publication action. Manuscript, submission source, bibliography and preexisting cover-letter edits were preserved."
+    },
+    {
+      "id": "binomial-collaboration-supplied-sources-2026-10-23-01",
+      "reviewed_on": "2026-10-23",
+      "updates_review_run": "binomial-collaboration-2026-10-23",
+      "report": "Review/2026-10-23-binomial-collaboration-supplied-sources.md",
+      "updated_assessment": "Review/2026-10-23-binomial-collaboration.md",
+      "source_manifest": "build/binomial-collaboration-2026-10-23/followup-sources-01/filed-manifest.json",
+      "library_filing_record": "../Shared/Maintenance/2026-10-23-binomial-collaboration/followup-sources-01/README.md",
+      "verification_record": "build/binomial-collaboration-2026-10-23/followup-sources-01/verification.json",
+      "sources": [
+        {
+          "title": "The Greatest Common Divisor of Certain Sets of Binomial Coefficients",
+          "authors": "H. Joris; C. Oestreicher; J. Steinig",
+          "year": 1985,
+          "doi": "10.1016/0022-314X(85)90013-7",
+          "library_path": "../Shared/Articles/Joris, Oestreicher and Steinig - The Greatest Common Divisor of Certain Sets of Binomial Coefficients (1985).pdf",
+          "sha256": "24b7654bdeafb68aeb7b9362d06cbfcf2f31464a3ff31361d6515a004721a158",
+          "pages": 19,
+          "reading_scope": "All 19 pages read; printed pp.102-119 visually inspected and p.101 text-read. Theorems 1-3 and their proof dependencies checked for applicability. Proposition 4's recursive finite-triangle selection hypothesis checked. Author-omitted proofs and all final numerical examples were not independently reconstructed."
+        },
+        {
+          "title": "On the Proof of GCD and LCM Equalities Concerning the Generalized Binomial and Multinomial Coefficients",
+          "authors": "Shiro Ando; Daihachiro Sato",
+          "year": 1991,
+          "doi": "10.1007/978-94-011-3586-3_2",
+          "container_title": "Applications of Fibonacci Numbers, Volume 4",
+          "container_doi": "10.1007/978-94-011-3586-3",
+          "library_path": "../Shared/Books/Bergum, Philippou and Horadam (eds.) - Applications of Fibonacci Numbers, Volume 4 (1991).pdf",
+          "sha256": "779c2dacd01e334a8ff83fb87723778be7169a73102ccaa43192d8e88464eb47",
+          "container_pdf_pages": 338,
+          "printed_pages_read": "9-16",
+          "pdf_pages_read": "29-36",
+          "reading_scope": "All eight chapter pages read and visually inspected, including definitions, Basic Property and Examples 1-5. Front matter checked for identity and location. The rest of the proceedings was not substantively reviewed. Omitted or abbreviated proofs and the earlier cited chapters were not independently reconstructed or newly read."
+        }
+      ],
+      "resolved_full_text_gaps": [
+        "10.1016/0022-314X(85)90013-7",
+        "10.1007/978-94-011-3586-3_2"
+      ],
+      "remaining_principal_gap": {
+        "doi": "10.1007/s00009-026-03202-3",
+        "scope": "Chung-Yang 2026 remains abstract-only for both owner and assistant. Other historical access and coverage limits remain in the assessment."
+      },
+      "finding": "Joris completely solves consecutive-index gcds, including unrestricted central intervals. Ando-Sato proves specified local generalized-Pascal gcd/lcm identities. Neither inspected full text directly classifies the proposed exact-d Gaussian integral ideal uniformly in the row parameters. This scope distinction does not certify novelty; generic interval and strong-divisibility proposals should be excluded as principal research claims.",
+      "scope": "Source-only follow-up using the two supplied full texts under ARS verification guidance. Moved both PDFs unchanged into Shared, preserved original paths and reading scopes, and updated the local assessment. Earlier review-run scopes remain historical records. No new comprehensive literature search, independent whole-paper proof certification, Magma rerun, manuscript edit, compilation or submission."
     }
   ]
 }
