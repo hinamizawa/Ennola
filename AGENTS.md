@@ -1,26 +1,24 @@
-# Project instructions
+# Ennola project instructions
 
-This project prepares Junyu Lu's manuscript, `Draft/ennola-squareclasses.tex`, for submission to Publicationes Mathematicae Debrecen. Read [README.md](README.md), [PROJECT_KNOWLEDGE.md](PROJECT_KNOWLEDGE.md), and [Environment.md](Environment.md). User-wide mathematical research instructions also apply.
+This file adds Ennola-specific rules to the inherited global `AGENTS.md`. [README.md](README.md) maps the documentation; consult [PROJECT_KNOWLEDGE.md](PROJECT_KNOWLEDGE.md) when mathematical status is relevant and follow [Environment.md](Environment.md) for tool paths, builds, exports and computation settings. Keep each rule or procedure in its owning file and link to it elsewhere.
 
+## Manuscript
 
-- Edit `.tex` and `.bib` files directly with file-editing tools. Keep manuscript references in the single authoring bibliography `Draft/ennola.bib`; copies in generated submission packages are export snapshots. Do not generate or rewrite LaTeX through Python scripts unless a concrete technical reason makes that necessary; explain the reason. Python may be used for PDF extraction, rendering support, file verification and the owner's requested public Magma client.
-- Keep Markdown and LaTeX prose paragraphs on one source line. 
-- Keep the manuscript's written proofs independent of software output. The author requested removal of software-dependent exact-rank examples. Retain optional verification scripts outside the paper; do not reintroduce the omitted examples without a new request.
-- Assess the current source independently in a fresh proof review before consulting earlier verdicts. Distinguish proved statements, imported theorems, exact computations, conjectures, and open questions. A finite search proves an infinite claim only after a proved reduction to that finite search. Literature-search coverage is not proof of priority or journal acceptance.
-- Use native Windows tools, never WSL, and do not alter `TEXINPUTS`. Use the explicit paths in `Environment.md` after checking availability. Run Magma with `-n -S 1 -b` unless reproducing an explicitly recorded different seed; inspect logs for errors and pass markers.
-- The owner authorized selected calculations through the public Magma calculator and local Magma for tasks that time out. Use `scripts/magma-online.py` with the explicit interpreter in `Environment.md`, send only the selected computation, respect current service limits, and run requests sequentially. Preserve the transmitted code, hashes, version, settings, raw response and status. Check version-specific APIs and proof settings; a remote timeout or missing pass marker is not success. Keep remote and local results distinct. Create new verification scripts for this project; do not import another project's scripts or verdicts.
-- Use the owner's requested compiler at `C:/Users/jylu/AppData/Local/Programs/MiKTeX/miktex/bin/x64/pdflatex.exe` for builds. Do not use the bundled compiler for this project.
-- Use `scripts/build.ps1` for reproducible builds. Keep the downloaded `Draft/publmathdeb.cls` unchanged; its source URL and hash are recorded in `sources.json`. Apply necessary compatibility settings in the manuscript preamble. Preserve a hash-verified original before substantial revision. Prepare a separate candidate, compile and inspect it, then synchronize the approved task's edits to the main manuscript.
-- Keep the author's abstract unchanged unless an abstract revision is explicitly requested. Retain `\documentclass[draft]{publmathdeb}` in the submission source, following the journal's example; disabled PDF hyperlinks in this mode are expected.
+- Use `Draft/ennola.bib` as the single authoring bibliography for both manuscript formats; exported copies are snapshots.
+- Keep Markdown and LaTeX prose paragraphs on one source line.
+- Keep written proofs independent of software output and optional verification scripts outside the paper. Do not restore the removed software-dependent exact-rank examples without a new request.
+- Preserve the author's abstract unless its revision is explicitly requested. Retain `\documentclass[draft]{publmathdeb}` in the submission source.
+- Keep `Draft/publmathdeb.cls` unchanged; its identity and hash are in `sources.json`. Put compatibility settings in the manuscript preamble.
+- Before substantial manuscript revision, preserve a hash-verified original, prepare a separate candidate, compile and inspect it, then synchronize the authorized edits to the main manuscript.
+- Use only supplied or confirmed author declarations; do not invent funding, competing-interest, originality or submission attestations.
 
-- Read `../Shared/AGENTS.md` and `../Shared/README.md` before library changes. Reuse equivalent source copies; preserve PDF bytes, source version, original path or URL, SHA-256, acquisition date when known, originating project, and exact reading scope. Record current use in `sources.json`. Do not edit another project's notes or source-errata verdicts without an applicable request. New articles belong in `Shared/Articles/` with descriptive filenames and provenance.
+## Sources, computations and artifacts
 
-- Keep article PDFs, publisher sample documents, source extracts, local environments, and generated outputs out of Git. User-supplied author details are for the manuscript; do not invent funding, competing-interest, originality, or submission declarations.
-- This directory is a Git repository. After each major modification, run the relevant checks, inspect the final diff and outgoing files and history for unintended material, including copyrighted source corpora and secrets, stage only task-owned changes, make a focused commit, push without force to the configured remote, and verify that the remote branch matches the local commit. The owner authorizes this routine commit-and-push workflow; preserve unrelated working-tree changes and stay on the current branch unless explicitly requested otherwise. Read-only work needs no commit. Report any blocked commit or push rather than claiming synchronization.
-- Keep inventories, backups and run records under `build/`; keep current project descriptions and computation explanations beside their sources. Preparation does not authorize emailing or submitting the manuscript.
+- Before library changes, read [../Shared/AGENTS.md](../Shared/AGENTS.md) and [../Shared/README.md](../Shared/README.md) and follow their intake and provenance conventions. Record this project's source use and exact reading scope in `sources.json`; leave other projects' notes and source-errata verdicts unchanged unless requested.
+- The owner authorizes selected public-calculator jobs and local Magma fallback for timeouts. Create verification scripts for this project rather than importing another project's scripts or verdicts.
+- Keep inventories, backups and run records under `build/`, and computation explanations beside their sources. Keep article PDFs, publisher samples, source extracts, local environments and generated outputs out of Git; exclusions are in `.gitignore`.
 
-## Computational software and C/C++ toolchain
+## Delivery
 
-- Use native MSYS2 UCRT64 as the default C/C++ toolchain: `C:\msys64\ucrt64\bin` supplies GCC/G++, CMake, Ninja, and `pkg-config`. Use FLINT, GMP, and MPFR from the same UCRT64 prefix, keep `C:\msys64\usr\bin` out of the global PATH, and verify selected executable paths and versions before use.
-- Use Strawberry Perl (`C:\Strawberry\perl\bin\perl.exe`) for Perl. Retain its Perl and runtime paths, while selecting MSYS2 UCRT64 for C/C++.
-- Choose PARI/GP, WolframScript, Magma, FLINT, Python, or another suitable system by the task's algorithms, correctness guarantees, availability, performance, and reproducibility; there is no fixed software ranking or Magma-first preference. Preserve tool-specific commands, seeds, proof settings, and logs when reproducing an existing calculation.
+- The owner authorizes a focused commit and push after each validated major modification, following the global Git checks and any task-specific review-only boundary. Read-only work needs no commit.
+- Preparing files does not authorize emailing or submitting the manuscript.

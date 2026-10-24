@@ -1,5 +1,7 @@
 # Optional computation files
 
+Shared execution settings and commands are maintained in [Environment.md](../Environment.md#computations). The notes below describe each script's mathematics, inputs and recorded results.
+
 The submission's proofs use written arguments and explicit finite calculations. [verify-finite.m](verify-finite.m) optionally checks the arithmetic retained in the manuscript; [finite-verification.md](finite-verification.md) is the separate explanation for the journal and records its successful final run.
 
 [verify-specialization.m](verify-specialization.m), its [technical notes](specialization-verification.md), and the [development results](specialization-development-results.md) concern examples removed at the author's request. They are preserved as development work and excluded from the submission package. Those earlier integer-discovery attempts did not yield a completed verification. Completed, failed, timed-out and interrupted runs remain distinct in the records.
