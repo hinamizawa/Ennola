@@ -45,14 +45,14 @@ Build outputs remain in the selected directory until the candidate workflow in `
 
 ## Cover letter and export
 
-The PMD cover letter is edited in `Submission/cover-letter-pmd.md`. Its renderer uses the existing Windows Georgia font, checks the title against the submission source, and writes `build/cover-letter-pmd-record.json`. Preserve the current PDF in a `build/` snapshot before replacing it.
+The PMD cover letter is edited in `Submission/cover-letter-pmd.md`. Its renderer uses the existing Windows Georgia font, checks the title and address against the submission source, and typesets the plain-text `2^n` in the letter as a superscript. It verifies the supplied license confirmation in `Computations/finite-verification.md`, where that declaration is recorded. Rendering and text/page checks take place in an isolated `build/cover-letter-*` directory before replacing the delivered PDF and writing `build/cover-letter-pmd-record.json`. Preserve the current PDF in a `build/` snapshot before replacing it.
 
 ```powershell
 & $projectPython scripts/render-cover-letter.py
 ./scripts/package-submission.ps1 -BuildDirectory 'build/submission' -OutputDirectory 'build/ennola-pmd-submission-new'
 ```
 
-Choose a new export directory each time. The package contains the Debrecen source under the portable name `Draft/ennola-squareclasses.tex`, its matching PDF and BBL, the bibliography and journal class, the PMD cover letter, and the optional finite-check supplement. The script checks manuscript body agreement while permitting the intentional preamble and whitespace differences. It checks build output hashes, the rendered cover letter, the unchanged finite verifier and its historical evidence, then verifies every ZIP entry. The supplied optional execution record remains dated 2 October 2026; packaging does not rerun it.
+Choose a new export directory each time. The package contains the Debrecen source under the portable name `Draft/ennola-squareclasses.tex`, its matching PDF and BBL, the bibliography and journal class, the PMD cover letter, and the optional finite-check supplement. The script checks manuscript body agreement while permitting the intentional preamble and whitespace differences. It checks build output hashes and the rendered cover letter's source, PDF, manuscript and explanation hashes, followed by the unchanged finite verifier and its historical evidence, then verifies every ZIP entry. The supplied optional execution record remains dated 2 October 2026; packaging does not rerun it. Later local verification records are kept separately.
 
 ## Computations
 

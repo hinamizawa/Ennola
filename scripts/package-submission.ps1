@@ -60,9 +60,24 @@ foreach ($output in $buildRecord.outputs) {
     }
 }
 $coverRecord = Get-Content -LiteralPath (Get-ProjectPath 'build/cover-letter-pmd-record.json') -Raw | ConvertFrom-Json
-foreach ($entry in @($coverRecord.source, $coverRecord.pdf)) {
+if ($coverRecord.status -ne 'pass' -or $coverRecord.pages -ne 1 -or
+    -not $coverRecord.title_matches_manuscript -or -not $coverRecord.address_matches_manuscript -or
+    -not $coverRecord.license_confirmation_in_explanation) {
+    throw 'Render and validate the current cover letter with scripts/render-cover-letter.py.'
+}
+$coverDependencies = [ordered]@{
+    source = 'Submission/cover-letter-pmd.md'
+    pdf = 'Submission/cover-letter-pmd.pdf'
+    manuscript = 'Draft/ennola-squareclasses-submission.tex'
+    software_explanation = 'Computations/finite-verification.md'
+}
+foreach ($dependency in $coverDependencies.GetEnumerator()) {
+    $entry = $coverRecord.($dependency.Key)
+    if ($null -eq $entry -or $entry.path -ne $dependency.Value) {
+        throw 'The cover-letter record is missing a required dependency; render the letter again.'
+    }
     if ((Get-FileHash -LiteralPath (Get-ProjectPath $entry.path) -Algorithm SHA256).Hash -ne $entry.sha256) {
-        throw 'The cover letter changed after rendering; run scripts/render-cover-letter.py again.'
+        throw 'The cover letter or a dependency changed after rendering; run scripts/render-cover-letter.py again.'
     }
 }
 

@@ -1,4 +1,4 @@
-# Ideal Classes of Prescribed 2-Power Order in Cubic Fields and Rational Points on Associated Elliptic Curves
+# Ideal Classes of Order $2^n$ in a Family of Totally Real Cubic Fields and Rational Points on Associated Elliptic Curves
 
 This project prepares Junyu Lu's manuscript for submission to **Publicationes Mathematicae Debrecen**. It studies ideal classes and elliptic points through squareclasses in the family of totally real cubic fields studied by Ennola. Earlier Canadian Mathematical Bulletin materials remain as dated alternatives.
 
@@ -32,6 +32,8 @@ Global and project `AGENTS.md` files are layered by Codex's [instruction discove
 | `build/` | Local snapshots, inventories, build logs, renders, computation records and exports. |
 
 ## Recorded submission checks
+
+The [final submission check of 26 October 2026](Submission/submission-check-2026-10-26.md) records the whole-manuscript audit, source checks, exact finite verification, and the subsequent synchronization of the title, address and supporting materials. The current builds have 18 journal pages and 13 `amsart` pages. The abstract, authoring bibliography and journal class are preserved.
 
 The [submission check of 13 October 2026](Submission/submission-check-2026-10-13.md) records source preservation, journal requirements, native builds, page inspection and export consistency. Its outputs had 19 journal pages and 13 `amsart` pages. These are dated results, not validation of later edits.
 

@@ -1,21 +1,21 @@
 # Submission files
 
-**Prescribed Ideal Classes in Ennola Cubic Fields and Rational Points on Associated Elliptic Curves**, Junyu Lu. Prepared for Publicationes Mathematicae Debrecen; checked on 13 October 2026.
+**Ideal Classes of Order $2^n$ in a Family of Totally Real Cubic Fields and Rational Points on Associated Elliptic Curves**, Junyu Lu. Prepared for Publicationes Mathematicae Debrecen; checked on 26 October 2026.
 
-This README describes the exported package. Its 19-page manuscript uses the unmodified journal class and the `draft` option shown in the journal's example. The author's abstract is unchanged. Hyperlinks are disabled by draft mode; references and citations resolve normally. The separate 13-page `amsart` version remains in the working project.
+This README describes the exported package. Its 18-page manuscript uses the unmodified journal class and the `draft` option shown in the journal's example. The author's abstract is unchanged. Hyperlinks are disabled by draft mode; references and citations resolve normally. The separate 13-page `amsart` version remains in the working project.
 
 The package contains:
 
 - `Draft/ennola-squareclasses.pdf` and `Draft/ennola-squareclasses.tex`: the matching journal PDF and source. The exported TeX is a snapshot of the working project's `ennola-squareclasses-submission.tex`.
 - `Draft/ennola.bib`, `Draft/ennola-squareclasses.bbl`, and `Draft/publmathdeb.cls`: the bibliography, generated references and journal class.
-- `Submission/cover-letter-pmd.md` and `Submission/cover-letter-pmd.pdf`: the current title, author details, publication-status declaration, and AI and software disclosures.
+- `Submission/cover-letter-pmd.md` and `Submission/cover-letter-pmd.pdf`: the current title, author details, publication-status declaration, and AI disclosure.
 - `Computations/verify-finite.m` and `Computations/finite-verification.md`: optional exact arithmetic checks and a separate explanation.
-- `scripts/magma-online.py` and the successful historical record under `build/online-magma/`: reproducible inputs, response and execution settings for the 2 October 2026 run. This run was not repeated during the submission check.
+- `scripts/magma-online.py` and the successful historical record under `build/online-magma/`: reproducible inputs, response and execution settings for the 2 October 2026 run. The public-calculator run was not repeated when preparing this package; its original evidence is preserved.
 - `manifest.json`: sizes and SHA-256 hashes of all supplied files except the manifest itself.
 
 The manuscript presents mathematical proofs with explicit finite calculations. It contains no software-dependent exact-rank examples. The optional code checks arithmetic in those proofs; the mathematical arguments and cited theorems do not depend on running it. Unfinished development experiments are excluded from this package.
 
-The [journal's author instructions](https://publi.math.unideb.hu/for-authors) were checked on 13 October 2026. Initial submission uses the PDF; the source files are also prepared here. The cover letter carries the AI disclosure and the author's confirmation of licensed local software use. The manuscript's proofs are independent of software output. The cover letter retains the author's confirmed statement that the manuscript is unpublished and not under consideration elsewhere. Other submission attestations have not been inferred, and no email or journal submission has been made.
+The [journal's author instructions](https://publi.math.unideb.hu/for-authors) were checked on 26 October 2026. Initial submission uses the PDF; the source files are also prepared here. The cover letter carries the AI disclosure; `Computations/finite-verification.md` records the author's confirmation of licensed local software use. The manuscript's proofs are independent of software output. The cover letter retains the author's confirmed statement that the manuscript is unpublished and not under consideration elsewhere. Other submission attestations have not been inferred, and no email or journal submission has been made.
 
 ## Build
 

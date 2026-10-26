@@ -1,14 +1,14 @@
 {
-  "project": "Ideal Classes of Prescribed 2-Power Order in Cubic Fields and Rational Points on Associated Elliptic Curves",
+  "project": "Ideal Classes of Order 2^n in a Family of Totally Real Cubic Fields and Rational Points on Associated Elliptic Curves",
   "prepared_on": "2026-10-02",
-  "last_submission_check": "2026-10-13",
+  "last_submission_check": "2026-10-26",
   "scope": "Sources used for this submission preparation; this is not a full bibliography audit or a transfer of another project's reading records.",
   "sources": [
     {
       "id": "pmd-author-instructions",
       "url": "https://publi.math.unideb.hu/for-authors",
       "accessed_on": "2026-10-02",
-      "last_verified_on": "2026-10-13",
+      "last_verified_on": "2026-10-26",
       "reading_scope": "Submission, formal requirements, CAS code and explanation, AI transparency, and journal-class instructions.",
       "source_type": "official journal webpage"
     },
@@ -286,6 +286,190 @@
         "scope": "Abstract-only for both owner and assistant; no full theorem comparison claimed. Joris 1985 and Ando-Sato 1991 remain available from the supplied-source follow-up."
       },
       "scope": "Research theorem formulation, written proof and scoped mathematical audit; bounded exact computation; primary-source novelty comparison; four unchanged PDFs filed with provenance. Earlier reports and current-use records retain their historical scopes. No manuscript or bibliography edit, whole-manuscript fresh review, new exact class-group computation, compilation or submission."
+    },
+    {
+      "id": "final-submission-audit-2026-10-26",
+      "reviewed_on": "2026-10-26",
+      "report": "Review/2026-10-26-final-submission-audit.md",
+      "report_sha256": "6CC548C59D3D03FE985852F1D283479940C2B02022585EF5852A338B04C4ABAC",
+      "source_manifest": "build/final-submission-audit-2026-10-26-135235UTC/sources.json",
+      "source_manifest_sha256": "AB3D227173A72A84CA275B82B2565508EFE748E975BFE1DAEE58E0EF273BE774",
+      "reviewed_manuscripts": [
+        {
+          "path": "Draft/ennola-squareclasses.tex",
+          "sha256": "E78F6E95290AFB97531CEC003FA261FAED82B4D6BDC06A186CDD16DAFA5BA97D"
+        },
+        {
+          "path": "Draft/ennola-squareclasses-submission.tex",
+          "sha256": "5C633FCD1808D5C9C8B48EC2ADD8085690F73051C28CE5A54E061AC494D654DC"
+        }
+      ],
+      "reading_scope": "All substantive manuscript passages, 15 formal statements and proofs, two remarks, both tables, and all 13 active citation applications. Previous conversational exposure is disclosed in the report; previous reviews and manuscript-specific memories were not consulted for the fresh examination.",
+      "sources": [
+        {
+          "id": "Ennola1991",
+          "path": "../Shared/Books/Petho, Pohst, Williams and Zimmer (eds) - Computational Number Theory (1991).pdf",
+          "sha256": "0C67FF1A80FBB3C0C92408D6EC26684CBD4E37BD2A5236BFCFB630E37F05658C",
+          "hash_rechecked": true,
+          "reading_scopes": [
+            "Chapter identity and family setup on printed pp.103-104,106 (PDF117,118,120); Proposition3.3 and proof p.109 (PDF123); Conjecture4.1 and context p.112 (PDF126); Proposition6.1 and Theorem6.1 setup/statement and relevant proof passages pp.117-119 (PDF131-133). PDF123,126,131,132 visually inspected. Applicability, not a complete reconstruction of every chapter proof."
+          ]
+        },
+        {
+          "id": "Louboutin2017",
+          "path": "../Shared/Articles/Louboutin - Non-Galois cubic number fields with exceptional units (2017).pdf",
+          "sha256": "577510A79B592D5D2EB804F587639CBC5D3A714A78DDFC5BC0FEE6EDFD47E1E0",
+          "hash_rechecked": true,
+          "reading_scopes": [
+            "Printed pp.153,156-157 (PDF1,4-5): source identity, unit-index and family setup, Proposition4 context, complete Lemma6 statement and proof."
+          ]
+        },
+        {
+          "id": "Louboutin2001",
+          "path": "../Shared/Articles/Louboutin - Class number and class group problems for some non-normal totally real cubic number fields (2001).pdf",
+          "sha256": "E702FCFE31F71D6AE13EB8AEED48D4D5CD86384B9F7C3ACACDAD0B0FDCD07097",
+          "hash_rechecked": true,
+          "reading_scopes": [
+            "Printed p.412 (PDF2) family polynomial and generator; printed pp.422-424 (PDF12-14) Theorem10 statement and proof. Applicability checked; cited background theorems not independently re-proved."
+          ]
+        },
+        {
+          "id": "ChoiKim2025",
+          "path": "../Shared/Articles/Choi and Kim - On a weak form of Ennolas conjecture about certain cubic number fields (2025).pdf",
+          "sha256": "D16E2559F9F8619DEEF01CF30682EE5D3F2D17023302D8ABE4A348330697160C",
+          "hash_rechecked": true,
+          "reading_scopes": [
+            "Article pp.1-2 (PDF1-2): introduction, precise full-conjecture statement and weak-form Theorem1. Later proofs not read in this final audit."
+          ]
+        },
+        {
+          "id": "Lee2010",
+          "path": "../Shared/Articles/Lee - Divisibility of class numbers of non-normal totally real cubic number fields (2010).pdf",
+          "sha256": "B8676272B6B2D1F9CCC47F359AABFB47405DC3D2E91C40FB41952C5776FE76EB",
+          "hash_rechecked": true,
+          "reading_scopes": [
+            "All printed pp.38-40 (PDF1-3) read; Theorem1.1 visually checked on PDF1. Family conversion and infinite-fields conclusion checked. Nakano foundation not independently source-audited."
+          ]
+        },
+        {
+          "id": "KalaSgallovaTinkova2025",
+          "path": "../Shared/Articles/Kala, Sgallova and Tinkova - Arithmetic of cubic number fields - Jacobi-Perron, Pythagoras, and indecomposables (2024, arXiv v2).pdf",
+          "sha256": "BB325144C314FEFA034A26250FE2703DF71BA488AF9575A6A11FF09ECCFABAFD",
+          "hash_rechecked": true,
+          "reading_scopes": [
+            "Supplied arXiv-v2 PDF pp.6-7 family/order setup and p.11 Proposition3.7 statement and proof read. Earlier indecomposable-classification proofs not reconstructed. No bibliography-only issue considered."
+          ]
+        },
+        {
+          "id": "Washington1987",
+          "path": "../Shared/Articles/Washington - Class numbers of the simplest cubic fields (1987).pdf",
+          "sha256": "3B5787D0B47D1ADED1549C1F31EF4F6A8AA605F6003EA063F8EDD5F028A8FB40",
+          "hash_rechecked": true,
+          "reading_scopes": [
+            "Published Section 3, Theorem 1, printed pp.375-378; statement/setup and surrounding argument. Theorem page visually checked."
+          ]
+        },
+        {
+          "id": "Walsh2023",
+          "path": "../Shared/Articles/Walsh, P G - A note on lower bounds for ranks using Pell equations (2023).pdf",
+          "sha256": "ABC5BE6222D8F30EF1E16F35B90B6C0FB75E14386FACB9E0219EC419E2EDD016",
+          "hash_rechecked": true,
+          "reading_scopes": [
+            "Published five-page article; Theorem 1.1 pp.81-82 and proof read; theorem pages visually checked. External searches not rerun."
+          ]
+        },
+        {
+          "id": "Walsh2024",
+          "path": "../Shared/Articles/Walsh, P G - Specializations of a generic rank-2 curve of Shioda (2024).pdf",
+          "sha256": "F4F780EF3A2B7D633DA4720C8AD872AFE7CCDF07AAF884E6720231F249A9C538",
+          "hash_rechecked": true,
+          "reading_scopes": [
+            "Published seven-page article read; Section 2, Type III, pp.3-4 and point formulas; p.4 visually checked. Reported computations not rerun."
+          ]
+        },
+        {
+          "id": "Silverman2009",
+          "path": "../Shared/Books/Silverman - The Arithmetic of Elliptic Curves.pdf",
+          "sha256": "3EC014DA01D13B4A88ACF409F2EA688BFBD1581B9D5157B015847E8D41793A5C",
+          "hash_rechecked": true,
+          "reading_scopes": [
+            "Second edition, corrected second printing: VII.3.1(b), printed p.192, statement and proof; C.20.3, pp.456-457, setup and theorem. Selected pages visually checked. External proof of C.20.3 not rederived.",
+            {
+              "text_pdf_pages": [
+                286,
+                299,
+                327,
+                328,
+                329,
+                330,
+                331
+              ],
+              "rendered_pdf_pages": [
+                299,
+                331
+              ],
+              "locators": [
+                "Chapter IX notation, printed p. 269",
+                "Theorem IX.4.1, printed p. 282",
+                "Theorem X.1.1 and discussion, printed pp. 311-314",
+                "Proposition X.1.4, printed p. 315"
+              ],
+              "depth": "Source applications and non-applications checked; foundational proofs not re-proved.",
+              "search_only_pdf_pages": [
+                320,
+                354
+              ]
+            }
+          ]
+        },
+        {
+          "id": "GrasGras1975",
+          "path": "../Shared/Articles/Gras and Gras - Signature des unites cyclotomiques et parite du nombre de classes des extensions cycliques de Q de degre premier impair (1975).pdf",
+          "sha256": "746CE6D84E327B91C12678D5092469539227F8380C01FC773DE4E2C59F3E0138",
+          "hash_rechecked": true,
+          "reading_scopes": [
+            {
+              "text_pdf_pages": [
+                6,
+                7
+              ],
+              "rendered_pdf_pages": [
+                6
+              ],
+              "locators": [
+                "Section I.6(b-c), printed p. 5",
+                "Proposition I.5, printed p. 5",
+                "Immediate context, printed p. 6"
+              ],
+              "depth": "Statement, hypotheses and direct local applicability; not later theorems."
+            }
+          ]
+        },
+        {
+          "id": "Duquesne2001",
+          "path": "../Shared/Articles/Duquesne - Integral points on elliptic curves defined by simplest cubic fields (2001).pdf",
+          "sha256": "CA7936BC423E7154C5FD0521585C3FA0CF21A02F811AB55D212064ACB0349485",
+          "hash_rechecked": true,
+          "reading_scopes": [
+            "Published pp.91-93 extracted and read; Section 1, Theorem 1.1 on p.92 visually checked. Only historical relation used; no source algorithm rerun."
+          ]
+        },
+        {
+          "id": "Laoudi2006",
+          "path": "../Shared/Articles/Laoudi - 2-rang du groupe des classes et courbes elliptiques (2006).pdf",
+          "sha256": "3BCE92801AD059C9EFD02B5E30BBBC792EF7D079E66E038284C6983310BDDBE4",
+          "hash_rechecked": true,
+          "reading_scopes": [
+            "Published pp.31-33 extracted and read, including introduction and Section 2 setup; p.32 visually checked. Only related-work attribution used; no source theorem adapted."
+          ]
+        }
+      ],
+      "mathematical_result": "No substantive mathematical defect or unresolved material source application identified. Lemma 3.1 checked for arbitrary monic irreducible degree under its stated hypotheses. This does not guarantee freedom from error or certify priority, exact generic ranks, full Mordell-Weil bases or infinitely many integral rank-five parameters.",
+      "computation_record": "build/final-submission-audit-2026-10-26-135235UTC/magma/record.json",
+      "computation_scope": "Inspected unchanged finite verifier rerun locally with Magma V2.20-9, seed one; all three section markers and ENNOLA_FINITE_PASS, no errors. Separate exact algebra, Pell-period and geometry checks recorded in the audit directory. Historical public-calculator and external authors' computations were not rerun.",
+      "submission_findings": "Stale journal PDF title; cover-letter title, address and date; renderer title/licensing guards and stale cover record; package title/page-count and declaration-location descriptions. Optional clarification of the norm-one-unit sentence.",
+      "follow_up": "Submission/submission-check-2026-10-26.md",
+      "scope": "Read-only mathematical audit followed by separately authorized file updates, PDF rebuilding and export verification. The follow-up changes only the norm-one-unit sentence in the audited TeX sources; the abstract, bibliography and official class are preserved. No email, journal submission or arXiv update."
     }
   ]
 }

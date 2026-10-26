@@ -1,6 +1,6 @@
 # Explanation of the optional finite checks
 
-Manuscript: **Prescribed Ideal Classes in Ennola Cubic Fields and Rational Points on Associated Elliptic Curves**, by Junyu Lu. Computation performed on 2 October 2026; explanation updated on 13 October 2026.
+Manuscript: **Ideal Classes of Order $2^n$ in a Family of Totally Real Cubic Fields and Rational Points on Associated Elliptic Curves**, by Junyu Lu. Computation performed on 2 October 2026; explanation updated on 26 October 2026.
 
 The manuscript gives written proofs with explicit identities, residue calculations, finite tables and a squareclass matrix. [verify-finite.m](verify-finite.m) provides optional checks of that arithmetic. None of its theorems invokes a software rank bound, point search, class-group computation or unit-group computation. Software-dependent exact-rank examples have been removed from the submission. The mathematical proof reductions and cited theorems remain essential; running this file is not a substitute for checking them.
 
