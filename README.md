@@ -1,6 +1,6 @@
-# Prescribed Ideal Classes in Ennola Cubic Fields and Rational Points on Associated Elliptic Curves
+# Ideal Classes of Prescribed 2-Power Order in Cubic Fields and Rational Points on Associated Elliptic Curves
 
-This project prepares Junyu Lu's manuscript for submission to **Publicationes Mathematicae Debrecen**. It studies ideal classes and elliptic points through squareclasses in Ennola cubic fields. Earlier Canadian Mathematical Bulletin materials remain as dated alternatives.
+This project prepares Junyu Lu's manuscript for submission to **Publicationes Mathematicae Debrecen**. It studies ideal classes and elliptic points through squareclasses in the family of totally real cubic fields studied by Ennola. Earlier Canadian Mathematical Bulletin materials remain as dated alternatives.
 
 ## Documentation map
 

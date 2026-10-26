@@ -1,5 +1,5 @@
 {
-  "project": "Prescribed Ideal Classes in Ennola Cubic Fields and Rational Points on Associated Elliptic Curves",
+  "project": "Ideal Classes of Prescribed 2-Power Order in Cubic Fields and Rational Points on Associated Elliptic Curves",
   "prepared_on": "2026-10-02",
   "last_submission_check": "2026-10-13",
   "scope": "Sources used for this submission preparation; this is not a full bibliography audit or a transfer of another project's reading records.",
@@ -68,6 +68,45 @@
     }
   ],
   "review_runs": [
+    {
+      "id": "terminology-and-lemma31-2026-10-26",
+      "reviewed_on": "2026-10-26",
+      "manuscript": "Draft/ennola-squareclasses.tex",
+      "input_manuscript_sha256": "CF98B10B40FE28F58A72957EF2201F8AA8ADA80F858E9152C75585BC49265BB5",
+      "original_manifest": "build/terminology-lemma31-2026-10-26/original-manifest.json",
+      "proof_check": "build/terminology-lemma31-2026-10-26/lemma-3.1-check.md",
+      "verification_record": "build/terminology-lemma31-2026-10-26/verification.json",
+      "scope": "Literature-based title and field-terminology revision selected by the author; focused proof check of Lemma 3.1 in arbitrary degree. The lemma and its proof are unchanged. Only terminology in the existing abstract is changed; the abstract is not regenerated. Existing user edits are preserved. No whole-manuscript proof audit, rank computation, submission or new export is claimed.",
+      "sources_used": [
+        {
+          "id": "Louboutin2017",
+          "url": "https://publi.math.unideb.hu/paper/2170/download/10_5486_PMD_2017_7726.pdf",
+          "reading_scope": "Published pp.153-154: title, abstract and introductory family definitions. Checked the descriptive terminology totally real non-Galois cubic fields and its connection with exceptional units. No new unit-index proof audit or library modification."
+        },
+        {
+          "id": "PincusWashington2022Preprint",
+          "title": "Relative Ideal Classes of Arbitrary Order",
+          "url": "https://arxiv.org/abs/2206.12313",
+          "pdf_url": "https://arxiv.org/pdf/2206.12313",
+          "version": "arXiv:2206.12313v1, 24 June 2022",
+          "reading_scope": "Author-deposited abstract record and PDF title/abstract on p.1, for the naming pattern ideal classes of arbitrary order. No theorem or proof from this paper is newly applied."
+        },
+        {
+          "id": "Komatsu2017Terminology",
+          "title": "An infinite family of pairs of imaginary quadratic fields with ideal classes of a given order",
+          "doi": "10.1142/S1793042117500154",
+          "url": "https://tus.elsevierpure.com/en/publications/an-infinite-family-of-pairs-of-imaginary-quadratic-fields-with-id/",
+          "reading_scope": "Tokyo University of Science institutional record: title, abstract and publication metadata for the naming pattern ideal classes of a given order. Full paper not read or used in a proof."
+        },
+        {
+          "id": "ConradHenselTerminologyCheck2026",
+          "title": "Hensel's Lemma",
+          "author": "Keith Conrad",
+          "url": "https://kconrad.math.uconn.edu/blurbs/gradnumthy/hensel.pdf",
+          "reading_scope": "Theorem 2.1, p.1, simple-root Hensel lifting for arbitrary polynomials in Z_p[X]. Checked its hypotheses and applicability to Lemma 3.1; no whole-notes audit."
+        }
+      ]
+    },
     {
       "id": "submission-check-2026-10-13",
       "reviewed_on": "2026-10-13",
