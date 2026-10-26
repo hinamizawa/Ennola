@@ -6,7 +6,7 @@ Publicationes Mathematicae Debrecen
 
 Dear Editors,
 
-Please consider my manuscript, “Ideal Classes of Prescribed 2-Power Order in Cubic Fields and Rational Points on Associated Elliptic Curves”, for publication in Publicationes Mathematicae Debrecen.
+Please consider my manuscript, “Ideal Classes of Prescribed 2-Power Order in Cubic Fields and Rational Points on Associated Elliptic Curves” (arXiv identifier: 2610.04254), for publication in Publicationes Mathematicae Debrecen.
 
 The paper studies ideal classes and rational points through squareclasses in Ennola's family of cubic fields. For every rational prime at least 5 and every power of two at least 4, it constructs a field with a specified prime ideal above that rational prime having exactly the prescribed class order. The proof applies in the maximal order, including cases where the defining monogenic order is nonmaximal.
 
@@ -16,9 +16,8 @@ The arguments develop and apply established results on units, local squareclasse
 
 The manuscript is unpublished and is not under consideration elsewhere.
 
-I used OpenAI Codex (GPT-6) for mathematical auditing, preparation of verification scripts, reference checking, and editorial polishing. The results and proofs were developed before this use of AI. I retain responsibility for the mathematical content, references, and final text.
+I used OpenAI Codex (GPT-6) for mathematical auditing, reference checking, and editorial polishing. The results and proofs were developed before this use of AI. I retain responsibility for the mathematical content, references, and final text.
 
-Optional Magma verification code and a separate explanation of its scope accompany the manuscript. The code checks finite arithmetic in the written proofs; the proofs do not depend on running it. The checks used the public calculator, and my local installation used for separate development work is covered by a valid license.
 
 Thank you for considering the manuscript.
 

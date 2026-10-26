@@ -74,26 +74,26 @@ We use the following notation and conventions. For a number field $L$, $\Nm_{L/\
 Our first result prescribes both the rational prime and the exact order of a prime ideal class.
 
 \begin{samepage}
-\begin{theorem}\label{thm:prescribed-prime}
-  Let $\ell\geq5$ be a rational prime. For integers $n\geq2$, put $N=2^n$ and
-  \[
-    (D,a)=
-    \begin{cases}
-      \left(4,(\ell^N-73)/12\right),     & \ell\ne137, \\[2pt]
-      \left(24,(137^N-14353)/552\right), & \ell=137.
-    \end{cases}
-  \]
-  Then $a$ is an integer with $a\geq3$ and $a\equiv2\pmod4$. Moreover, the ideal
-  \[
-    \mathfrak p=(\ell,D\theta-D+1)\mathcal O_{K_a}
-  \]
-  is prime of norm $\ell$, and
-  \[
-    \mathfrak p^N=(D\theta-D+1),\qquad
-    \ord_{\Cl(K_a)}[\mathfrak p]=N.
-  \]
-  For each fixed $\ell$, these parameters give infinitely many isomorphism classes of fields $K_a$ as $n$ varies.
-\end{theorem}
+  \begin{theorem}\label{thm:prescribed-prime}
+    Let $\ell\geq5$ be a rational prime. For integers $n\geq2$, put $N=2^n$ and
+    \[
+      (D,a)=
+      \begin{cases}
+        \left(4,(\ell^N-73)/12\right),     & \ell\ne137, \\[2pt]
+        \left(24,(137^N-14353)/552\right), & \ell=137.
+      \end{cases}
+    \]
+    Then $a$ is an integer with $a\geq3$ and $a\equiv2\pmod4$. Moreover, the ideal
+    \[
+      \mathfrak p=(\ell,D\theta-D+1)\mathcal O_{K_a}
+    \]
+    is prime of norm $\ell$, and
+    \[
+      \mathfrak p^N=(D\theta-D+1),\qquad
+      \ord_{\Cl(K_a)}[\mathfrak p]=N.
+    \]
+    For each fixed $\ell$, these parameters give infinitely many isomorphism classes of fields $K_a$ as $n$ varies.
+  \end{theorem}
 \end{samepage}
 
 The change of linear form at $137$ is needed for the stated prime-ideal construction; see Remark~\ref{rem:137}. The order $\Z[\theta]$ need not be maximal. Proposition~\ref{prop:nonmaximal} gives an explicit infinite sequence where it is not.
@@ -123,17 +123,17 @@ The change of linear form at $137$ is needed for the stated prime-ideal construc
   and their classes generate a subgroup isomorphic to $(\Z/2\Z)^2$ in $\Cl(K_a)$.
 \end{theorem}
 
-The square conditions define $v^2-20u^2=2861$. Theorem~\ref{thm:pell} describes all positive solutions giving either required congruence on $a$, and Proposition~\ref{prop:subsequence} provides infinitely many parameters satisfying the ideal-class hypotheses. The smallest parameter is $a=134$, with $(u,v)=(41,191)$. We also obtain an explicit family over $\Q(t)$ of rank at least four in Corollary~\ref{cor:rational-family}. These theorems give rank lower bounds and saturation at two; they do not determine ranks uniformly or give full Mordell--Weil bases of the specializations.
+The square conditions define $v^2-20u^2=2861$. Theorem~\ref{thm:pell} describes all positive solutions giving either required congruence on $a$, and Proposition~\ref{prop:subsequence} provides infinitely many parameters satisfying the ideal-class hypotheses. We also obtain an explicit family over $\Q(t)$ of rank at least four in Corollary~\ref{cor:rational-family}.
 
 Proposition~\ref{prop:rank-five-rational} gives infinitely many rational parameters with rank at least five by a further genus-one base change. This construction has only one integral value of $a$, as shown in Remark~\ref{rem:rank-five-integrality}.
 
-\subsection*{Relation to earlier work}
+% \subsection*{Relation to earlier work}
 
-Ennola proved the description of units modulo squares recalled in Lemma~\ref{lem:units} and constructed $K_a(\sqrt{\theta(\theta-1)})/K_a$ as an unramified quadratic extension for $a\equiv2\pmod4$ \cite[Propositions 3.3 and 6.1]{Ennola1991}; his Theorem~6.1 also gives families whose class groups have $2$-rank at least two for all sufficiently large admissible parameters. We recall Louboutin's short proof of the squareclass result \cite[Lemma 6]{Louboutin2017}. In Corollary~\ref{cor:hilbert}, we construct a second unramified quadratic extension, linearly disjoint from Ennola's extension over $K_a$. The use of signatures and congruences at primes above two follows the classical strategy of G.~Gras and M.-N.~Gras \cite[\S I.6]{GrasGras1975}, with the local conditions checked directly here.
+% Ennola proved the description of units modulo squares recalled in Lemma~\ref{lem:units} and constructed $K_a(\sqrt{\theta(\theta-1)})/K_a$ as an unramified quadratic extension for $a\equiv2\pmod4$ \cite[Propositions 3.3 and 6.1]{Ennola1991}; his Theorem~6.1 also gives families whose class groups have $2$-rank at least two for all sufficiently large admissible parameters. We recall Louboutin's short proof of the squareclass result \cite[Lemma 6]{Louboutin2017}. In Corollary~\ref{cor:hilbert}, we construct a second unramified quadratic extension, linearly disjoint from Ennola's extension over $K_a$. The use of signatures and congruences at primes above two follows the classical strategy of G.~Gras and M.-N.~Gras \cite[\S I.6]{GrasGras1975}, with the local conditions checked directly here.
 
-Lee \cite[Theorem 1.1]{Lee2010} constructs ideal classes of any prescribed order in infinitely many fields of the same cubic family, written using $\rho=1/(\theta-1)$ and parameter $a+1$. Theorem~\ref{thm:prescribed-prime} fixes the rational prime in advance and gives uniform formulas for a prime ideal above it whose class has the prescribed power-of-two order. The norm bound of Kala--Sgallov\'a--Tinkov\'a \cite{KalaSgallovaTinkova2025} gives an alternative exact-order argument for the first parameter formula when $\mathcal O_{K_a}=\Z[\theta]$. Under the same assumption, Louboutin's earlier bound \cite[Theorem 10]{Louboutin2001} gives this argument for $a\geq59$. Our local proof also applies when $\Z[\theta]$ is nonmaximal, as in Proposition~\ref{prop:nonmaximal}. Related power-residue constructions occur in Pincus--Washington \cite[\S4]{PincusWashington2023}.
+% Lee \cite[Theorem 1.1]{Lee2010} constructs ideal classes of any prescribed order in infinitely many fields of the same cubic family, written using $\rho=1/(\theta-1)$ and parameter $a+1$. Theorem~\ref{thm:prescribed-prime} fixes the rational prime in advance and gives uniform formulas for a prime ideal above it whose class has the prescribed power-of-two order. The norm bound of Kala--Sgallov\'a--Tinkov\'a \cite{KalaSgallovaTinkova2025} gives an alternative exact-order argument for the first parameter formula when $\mathcal O_{K_a}=\Z[\theta]$. Under the same assumption, Louboutin's earlier bound \cite[Theorem 10]{Louboutin2001} gives this argument for $a\geq59$. Our local proof also applies when $\Z[\theta]$ is nonmaximal, as in Proposition~\ref{prop:nonmaximal}. Related power-residue constructions occur in Pincus--Washington \cite[\S4]{PincusWashington2023}.
 
-For simplest cubic fields, Washington \cite[\S3, Theorem 1]{Washington1987} established a connection between elliptic-curve ranks and cubic ideal classes; related connections are developed by Duquesne \cite{Duquesne2001} and Laoudi \cite{Laoudi2006}. Buell--Ennola \cite{BuellEnnola1995} study the $3$-primary part of the class group of the quadratic resolvent of the Ennola family. For related elliptic curves, Walsh gives a Pell construction of rank at least three for sufficiently large parameters under auxiliary irreducibility hypotheses \cite[Theorem 1.1]{Walsh2023}, and a four-point construction with computational evidence of independence \cite[\S2, Type III]{Walsh2024}. Here we prove a rank lower bound of four together with cubic ideal-class results under explicit congruence conditions, and classify all parameters in the resulting Pell construction.
+% For simplest cubic fields, Washington \cite[\S3, Theorem 1]{Washington1987} established a connection between elliptic-curve ranks and cubic ideal classes; related connections are developed by Duquesne \cite{Duquesne2001} and Laoudi \cite{Laoudi2006}. Buell--Ennola \cite{BuellEnnola1995} study the $3$-primary part of the class group of the quadratic resolvent of the Ennola family. For related elliptic curves, Walsh gives a Pell construction of rank at least three for sufficiently large parameters under auxiliary irreducibility hypotheses \cite[Theorem 1.1]{Walsh2023}, and a four-point construction with computational evidence of independence \cite[\S2, Type III]{Walsh2024}. Here we prove a rank lower bound of four together with cubic ideal-class results under explicit congruence conditions, and classify all parameters in the resulting Pell construction.
 
 \section{Unit squareclasses and local obstructions}
 
@@ -190,7 +190,7 @@ Put $\alpha=4\theta-3$ and $\beta=16\theta-15$. Their norms are
 \end{equation}
 
 \begin{lemma}\label{lem:four-classes}
-  If $a\geq3$ and $a\equiv30$ or $34\pmod{52}$, the four classes $[\theta]$, $[\theta-1]$, $[\alpha]$, and $[\beta]$ are independent in $K_a^\times/K_a^{\times2}$.
+  If $a\geq3$ and $a\equiv30$ or $34\pmod{52}$, then the four classes $[\theta]$, $[\theta-1]$, $[\alpha]$, and $[\beta]$ are independent in $K_a^\times/K_a^{\times2}$.
 \end{lemma}
 
 \begin{proof}
@@ -271,7 +271,7 @@ since $a\geq46$ and $(2a-3)^2-(12a+73)=4(a-8)(a+2)>0$. The norm bound in \cite{K
 Louboutin's bound \cite[Theorem 10]{Louboutin2001} gives the same deduction for $a\geq59$, with his parameter $m=a+1$ and bound $2m-5=2a-3$. The identities $\rho=1/(\theta-1)=\theta(\theta+a)$ and $\theta=\rho^2-(a+1)\rho-(a+1)$ give $\Z[\rho]=\Z[\theta]$, so the maximality hypothesis agrees for the two generators $\rho$ and $\theta$.
 
 \begin{corollary}\label{cor:composite}
-  Let $n\geq2$, $N=2^n$, and $m\geq5$ with $\gcd(m,6\cdot137)=1$. For $a=(m^N-73)/12$, the ideal $I=(m,4\theta-3)\mathcal O_{K_a}$ has norm $m$, satisfies $I^N=(4\theta-3)$, and has exact class order $N$.
+  Suppose $n\geq2$, $N=2^n$, and $m\geq5$ with $\gcd(m,6\cdot137)=1$. If $a=(m^N-73)/12$, then the ideal $I=(m,4\theta-3)\mathcal O_{K_a}$ has norm $m$, satisfies $I^N=(4\theta-3)$, and has exact class order $N$.
 \end{corollary}
 
 \begin{proof}
@@ -297,7 +297,7 @@ Louboutin's bound \cite[Theorem 10]{Louboutin2001} gives the same deduction for 
 \end{remark}
 
 \begin{proposition}\label{prop:nonmaximal}
-  For $n\geq2$ and $a_n=(5^{2^n}-73)/12$, if $n\equiv13\pmod{110}$, then
+  Let $n\geq2$ and $a_n=(5^{2^n}-73)/12$. If $n\equiv13\pmod{110}$, then
   \[
     23\mid[\mathcal O_{K_{a_n}}:\Z[\theta]].
   \]
@@ -322,24 +322,24 @@ Louboutin's bound \cite[Theorem 10]{Louboutin2001} gives the same deduction for 
 \section{Four points and two ideal classes}
 
 \begin{lemma}\label{lem:virtual-units}
-  Let $K=K_a$, with $a\geq3$, and let
+  Let $a\geq3$, and let
   \[
-    E_K^{(1)}=\ker(\Nm_{K/\Q}:\mathcal O_K^\times\to\{\pm1\})
+    E_{K_{a}}^{(1)}=\ker(\Nm_{{K_{a}}/\Q}:\mathcal O_{K_{a}}^\times\to\{\pm1\})
   \]
   be its group of norm-one units. Define
   \[
-    V_K=\{\gamma\in K^\times:\Nm_{K/\Q}(\gamma)>0,\ v_{\mathfrak p}(\gamma)\in2\Z\ \text{for every finite prime }\mathfrak p\}/K^{\times2}.
+    V_{K_{a}}=\{\gamma\in {K_{a}}^\times:\Nm_{{K_{a}}/\Q}(\gamma)>0,\ v_{\mathfrak p}(\gamma)\in2\Z\ \text{for every finite prime }\mathfrak p\}/{K_{a}}^{\times2}.
   \]
   Then there is an exact sequence
   \[
-    1\longrightarrow E_K^{(1)}/(\mathcal O_K^\times)^2
-    \longrightarrow V_K\longrightarrow\Cl(K)[2]\longrightarrow1.
+    1\longrightarrow E_{K_{a}}^{(1)}/(\mathcal O_{K_{a}}^\times)^2
+    \longrightarrow V_{K_{a}}\longrightarrow\Cl({K_{a}})[2]\longrightarrow1.
   \]
-  The kernel of $V_K\to\Cl(K)[2]$ has dimension two over $\F_2$, with basis $[\theta],[\theta-1]$.
+  The kernel of $V_{K_{a}}\to\Cl({K_{a}})[2]$ has dimension two over $\F_2$, with basis $[\theta],[\theta-1]$.
 \end{lemma}
 
 \begin{proof}
-  The even valuations determine a unique fractional ideal $\mathfrak c$ with $(\gamma)=\mathfrak c^2$. Replacing $\gamma$ by a square multiple changes $\mathfrak c$ by a principal ideal, so the map is well defined. Its kernel consists of the classes of norm-one units: if $\mathfrak c=(\xi)$, then $\gamma/\xi^2$ is such a unit. Conversely, each norm-one unit represents an element of the kernel. A square root in $K$ of a unit is a unit, so the left map is injective. If $[\mathfrak c]\in\Cl(K)[2]$, write $\mathfrak c^2=(\gamma)$; replacing $\gamma$ by $-\gamma$ when necessary makes its norm positive because $[K:\Q]=3$. This proves surjectivity. The kernel assertion follows from Lemma~\ref{lem:units}.
+  The even valuations determine a unique fractional ideal $\mathfrak c$ with $(\gamma)=\mathfrak c^2$. Replacing $\gamma$ by a square multiple changes $\mathfrak c$ by a principal ideal, so the map is well defined. Its kernel consists of the classes of norm-one units: if $\mathfrak c=(\xi)$, then $\gamma/\xi^2$ is such a unit. Conversely, each norm-one unit represents an element of the kernel. A square root in ${K_{a}}$ of a unit is a unit, so the left map is injective. If $[\mathfrak c]\in\Cl({K_{a}})[2]$, write $\mathfrak c^2=(\gamma)$; replacing $\gamma$ by $-\gamma$ when necessary makes its norm positive because $[{K_{a}}:\Q]=3$. This proves surjectivity. The kernel assertion follows from Lemma~\ref{lem:units}.
 \end{proof}
 
 \begin{proof}[Proof of Theorem~\ref{thm:four-points}]
@@ -440,18 +440,19 @@ The proof uses signatures and congruences modulo four, as in \cite[\S I.6(b--c) 
 
   \begin{table}[ht]
     \centering
-    \caption{Complete congruence check for the two initial Pell solutions modulo $624$. The listed exponents lie in $0\leq k<56$.}
+
     \label{tab:pell}
     \begin{tabular}{ccc}
       \toprule
       Initial solution $(v_0,u_0)$ & $a\bmod52$ & Admissible exponents $k$ \\
       \midrule
-      $(79,13)$        & $30$       & $6,15,22,27,34,43,50,55$          \\
-      $(79,13)$        & $34$       & $7,14,35,42$                      \\
-      $(191,41)$       & $30$       & $0,5,12,21,28,33,40,49$           \\
-      $(191,41)$       & $34$       & $13,20,41,48$                     \\
+      $(79,13)$                    & $30$       & $6,15,22,27,34,43,50,55$ \\
+      $(79,13)$                    & $34$       & $7,14,35,42$             \\
+      $(191,41)$                   & $30$       & $0,5,12,21,28,33,40,49$  \\
+      $(191,41)$                   & $34$       & $13,20,41,48$            \\
       \bottomrule
     \end{tabular}
+    \caption{Complete congruence check for the two initial Pell solutions modulo $624$. The listed exponents lie in $0\leq k<56$.}
   \end{table}
 
   Both positive coordinates grow strictly along either orbit. Finally,
@@ -471,17 +472,18 @@ The proof uses signatures and congruences modulo four, as in \cite[\S I.6(b--c) 
 
   \begin{table}[ht]
     \centering
-    \caption{Complete coprimality checks on the orbit from $(191,41)$. The last column lists the indices $k$ within one period at which the indicated coordinate vanishes modulo the modulus.}
+
     \label{tab:coprime}
     \begin{tabular}{cccc}
       \toprule
       Modulus & Period & Coordinate & Vanishing indices $k$ \\
       \midrule
-      $137$   & $46$   & $u_k$      & none           \\
-      $23$    & $8$    & $v_k$      & none           \\
-      $2503$  & $2504$ & $v_k$      & $512,1764$     \\
+      $137$   & $46$   & $u_k$      & none                  \\
+      $23$    & $8$    & $v_k$      & none                  \\
+      $2503$  & $2504$ & $v_k$      & $512,1764$            \\
       \bottomrule
     \end{tabular}
+    \caption{Complete coprimality checks on the orbit from $(191,41)$. The last column lists the indices $k$ within one period at which the indicated coordinate vanishes modulo the modulus.}
   \end{table}
 
   For modulus $2503$, the period and the vanishing indices follow from explicit identities. With $w=(191,41)^{\mathsf T}$, calculation modulo $2503$ gives
